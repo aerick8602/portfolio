@@ -20,11 +20,11 @@ const Bottombar = () => {
       <p>master</p>
       <UploadIcon/>
       <a
-          href="https://github.com/itsnitinr/vscode-portfolio"
+          href="https://github.com/aerick8602/portfolio"
           className='githubrepo'
         >
           <RocketIcon/>&nbsp;
-          <p>https://github.com/aerick8602/myportfolio</p>
+          <p>https://github.com/aerick8602/portfolio</p>
       </a>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <ErrorIcon/>
