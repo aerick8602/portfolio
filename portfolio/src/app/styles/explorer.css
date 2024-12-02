@@ -1,0 +1,190 @@
+.explorerbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    background-color: #282828;
+    border-radius: 8px;
+    width: 240px;
+    height: 100vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 55px;
+    padding-top: 40px;
+    gap: 16px;
+  }
+  
+  .explorer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #d1d1d1;
+  }
+  
+  .explorer > p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+  }
+  
+  .dots {
+    padding-top: 4px;
+    font-size: 0.4rem !important;
+    color: #dcdcdc;
+    font-weight: bolder;
+    margin-bottom: 8px;
+  }
+  
+  .folder-checkbox {
+    padding: 5px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #d1d1d1;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 100%;
+  }
+
+  .refreshfolder{
+    margin-left:60px;
+
+  }
+  .refreshfolder:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+    filter: brightness(5);
+  }
+  .collapsefolder:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+    filter: brightness(5);
+  }
+
+  .portfolio{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(224, 222, 222);
+  }
+  
+  .folder-checkbox:hover {
+    color: #ffffff;
+
+  }
+  
+  .folder-checkbox:active {
+    color: #ffffff;
+  }
+  
+  .portfolio-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3e3e3e;
+    border: 1px solid #585858;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .portfolio-toggle:hover {
+    background-color: #4a4a4a;
+  }
+  
+  .chevron {
+    transition: transform 0.3s ease;
+  }
+  
+  .chevron.rotate {
+    transform: rotate(90deg);
+  }
+  
+  .file-list {
+    margin-left: 22px;
+  }
+  
+  .file-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #b5b5b5;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease, padding-left 0.2s ease;
+    width: 100%;
+    padding: 5px 0px 0px 0px; 
+  }
+  
+  .file-name {
+    font-size: 14px;
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis;
+    max-width:100%;
+    transition: all 0.3s ease; 
+
+  }
+  
+  .file-name.short {
+    max-width: 125px;
+  }
+  .folder-name {
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis;
+    max-width:100%;
+    transition: all 0.3s ease; 
+  }
+  
+  .folder-name.short {
+    max-width: 125px;
+  }
+
+.file-name:hover {
+  filter: brightness(5);
+  color: #ffffff;
+  padding-left: 3px;
+}
+  .file-item:active {
+    color: #ffffff;
+  }
+  
+  .file-icon {
+    width: 15px;
+    height: 15px;
+    color: #b5b5b5;
+  }
+  
+  
+  .folder-icon {
+    width: 16px;
+    height: 16px;
+    color: #b5b5b5;
+    transition: color 0.3s ease;
+  }
+  
+
+  
+  .explorerbar::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  .explorerbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .explorerbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  

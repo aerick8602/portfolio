@@ -1,0 +1,29 @@
+.sidebar {
+    background-color: #333232;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3.6vw;
+    height: 100vh;
+    position:fixed;
+    z-index: 1000;
+  }
+  
+  .topsidebar {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    padding-top: 55px;
+  }
+  
+  .bottomsidebar {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    padding-top: 85px;
+  }
+  
