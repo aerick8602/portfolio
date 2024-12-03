@@ -1,4 +1,4 @@
-.explorerbar {
+/* .explorerbar {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -13,7 +13,7 @@
     margin-left: 55px;
     padding-top: 40px;
     gap: 16px;
-  }
+  } */
   
   .explorer {
     display: flex;
@@ -21,6 +21,9 @@
     justify-content: space-between;
     align-items: center;
     color: #d1d1d1;
+    /* margin-left: -5px;
+    margin-top: -5px; */
+    margin: 10px;
   }
   
   .explorer > p {
@@ -29,48 +32,76 @@
     align-items: center;
     font-size: 13px;
   }
+  .explorer>img{
+    filter: brightness(70%);
+  }
   
   .dots {
-    padding-top: 4px;
-    font-size: 0.4rem !important;
-    color: #dcdcdc;
-    font-weight: bolder;
-    margin-bottom: 8px;
+    padding-right: 18px;
   }
   
   .folder-checkbox {
-    padding: 5px 0px 0px 0px;
+    padding: 3px 0px 3px 0px;
     display: flex;
     align-items: center;
     gap: 6px;
     color: #d1d1d1;
     font-size: 14px;
     cursor: pointer;
-    transition: color 0.3s ease;
-    width: 100%;
+
   }
 
+  .main-folder {
+    padding-left: 5px;
+    display: flex;
+    width: 100%;
+    align-items: center; 
+  }
+  
+  .expolrericons {
+    padding-right: 20px;
+    display: flex;
+    margin-left: auto; 
+    gap: 10px;
+  }
+  
   .refreshfolder{
     margin-left:60px;
+    filter: brightness(85%);
 
   }
   .refreshfolder:hover{
     color: #ffffff;
-    transform: scale(1.1);
+    transform: scale(1.05);
     filter: brightness(5);
+    cursor: pointer;
+  }
+  .collapsefolder{
+    filter: brightness(85%);
   }
   .collapsefolder:hover{
     color: #ffffff;
-    transform: scale(1.1);
+    transform: scale(1.05);
     filter: brightness(5);
+    cursor: pointer;
   }
 
   .portfolio{
-    font-size: 14px;
+    padding-left: 5px;
+    font-size: 13px;
     font-weight: 600;
     color: rgb(224, 222, 222);
   }
   
+  .folderheading{
+    padding-left: 40px;
+    /* background-color: black;
+    border: 2px solid wheat; */
+  }
+  .folderheading:hover{
+    background-color: #333232;
+  }
+
   .folder-checkbox:hover {
     color: #ffffff;
 
@@ -93,7 +124,7 @@
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
   }
   
   .portfolio-toggle:hover {
@@ -101,18 +132,20 @@
   }
   
   .chevron {
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
   }
   
   .chevron.rotate {
     transform: rotate(90deg);
   }
   
-  .file-list {
+  /* .file-list {
     margin-left: 22px;
   }
-  
+   */
   .file-item {
+    /* background-color: black; */
+    align-items: center;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -122,16 +155,21 @@
     cursor: pointer;
     transition: color 0.3s ease, padding-left 0.2s ease;
     width: 100%;
-    padding: 5px 0px 0px 0px; 
+    padding: 3px 0px 3.5px 40px; 
   }
   
+  .file-item:hover{
+    background-color: #333232;
+  }
+  
+
   .file-name {
     font-size: 14px;
     white-space: nowrap; 
     overflow: hidden;    
     text-overflow: ellipsis;
     max-width:100%;
-    transition: all 0.3s ease; 
+    transition: all 0.1s ease; 
 
   }
   
@@ -143,7 +181,7 @@
     overflow: hidden;    
     text-overflow: ellipsis;
     max-width:100%;
-    transition: all 0.3s ease; 
+    transition: all 0.1s ease; 
   }
   
   .folder-name.short {
@@ -170,7 +208,7 @@
     width: 16px;
     height: 16px;
     color: #b5b5b5;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
   }
   
 

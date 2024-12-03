@@ -1,17 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import ChevronRight from '../assets/icons/ChevronRight';
 import '../styles/explorer.css';
 
-
-
-
 const explorerItems = [
-  { name: 'about.md', path: '/about', type: 'file', src: '/png/md.png' },
+  { name: 'about.md', path: '/about', type: 'file', src: '/svg/info-svgrepo-com.svg' },
   { name: 'resume.cv', path: '/skills', type: 'file', src: '/png/cv.png' },
-  { name: 'skills', path: '/skills', type: 'file', src: '/png/skills.png' },
+  { name: 'skills', path: '/skills', type: 'file', src: '/png/tie.png' },
   {
     name: 'projects',
     type: 'folder',
@@ -41,21 +38,21 @@ const explorerItems = [
     src: '/png/band.png',
     items: [
       { name: 'dsa.cpp', path: '/achievements/bbb', type: 'file', src: '/png/c-.png' },
-      { name: 'flipKart.grid', path: '/achievements/aaa', type: 'file', src: '/png/favourites.png' },
+      { name: 'flipkart.grid', path: '/achievements/aaa', type: 'file', src: '/png/favourites.png' },
     ],
   },
   { name: 'contact', path: '/contact', type: 'file', src: '/png/phone.png' },
-
 ];
 
-
-const Explorer = () => {
+const Explorer = ({ onWidthChange, explorerWidth }) => {
   const [openFolders, setOpenFolders] = useState({
     portfolio: true,
     projects: false,
     education: false,
     achievements: false,
   });
+
+  const resizerRef = useRef(null);
 
   const toggleFolder = (folderName) => {
     setOpenFolders((prevState) => ({
@@ -66,7 +63,7 @@ const Explorer = () => {
 
   const collapseFolder = () => {
     setOpenFolders({
-      portfolio: false, 
+      portfolio: false,
       projects: false,
       education: false,
       achievements: false,
@@ -75,11 +72,11 @@ const Explorer = () => {
 
   const refreshExplorer = () => {
     setOpenFolders({
-      portfolio: true, 
+      portfolio: true,
       projects: false,
       education: false,
       achievements: false,
-    }); 
+    });
   };
 
   const renderItems = (items, folderName) => {
@@ -89,15 +86,15 @@ const Explorer = () => {
           <Link href={item.path} key={item.name} className="file-item">
             <img src={item.src} alt={`${item.name} icon`} className="file-icon" />
             <p className={`file-name ${item.name.length > 20 ? 'short' : ''}`}>
-  {item.name}
-</p>
+              {item.name}
+            </p>
           </Link>
         );
       }
-  
+
       if (item.type === 'folder') {
         return (
-          <div key={item.name}>
+          <div key={item.name} className='folderheading'>
             <label
               className="folder-checkbox"
               onClick={() => toggleFolder(item.name)}
@@ -107,8 +104,8 @@ const Explorer = () => {
               />
               <img src={item.src} alt={`${item.name} icon`} className="folder-icon" />
               <p className={`folder-name ${item.name.length > 20 ? 'short' : ''}`}>
-  {item.name}
-</p>
+                {item.name}
+              </p>
             </label>
             {openFolders[item.name] && (
               <div className="file-list">
@@ -121,26 +118,47 @@ const Explorer = () => {
     });
   };
 
+  const handleMouseDown = (e) => {
+    const startX = e.clientX;
+    const startWidth = explorerWidth;
+
+    const handleMouseMove = (moveEvent) => {
+      const newWidth = startWidth + moveEvent.clientX - startX;
+      const updatedWidth = Math.max(newWidth, 220); // Prevent shrinking too small
+      onWidthChange(updatedWidth); // Notify the parent of the width change
+    };
+
+    const handleMouseUp = () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+  };
+
   return (
-    <div className="explorerbar">
+    <div className="explorerbar" style={{ width: `${explorerWidth}px` }}>
       <div className="explorer">
         <p>EXPLORER</p>
-        <p className="dots">o o o</p>
+        <img className='dots' src='/svg/dots-horizontal-svgrepo-com.svg' width={30}></img>
       </div>
       <div className="folder">
         <label
-          className="folder-checkbox"
+          className="main-folder"
           onClick={() => toggleFolder('portfolio')}
         >
           <ChevronRight
             style={openFolders.portfolio ? { transform: 'rotate(90deg)' } : {}}
           />
-          <p className='portfolio'>PORTFOLIO</p>
+          <p className="portfolio">PORTFOLIO</p>
+          <div className='expolrericons'>
           <div onClick={refreshExplorer} className="refreshfolder">
-          <img src='/svg/refresh-cw-alt-svgrepo-com.svg' width={16}></img>
+            <img src="/svg/refresh-cw-alt-svgrepo-com.svg" width={14} />
           </div>
           <div onClick={collapseFolder} className="collapsefolder">
-            <img src='/svg/folder-remove-1-svgrepo-com.svg' width={16}></img>
+            <img src="/svg/folder-remove-1-svgrepo-com.svg" width={14} />
+          </div>
           </div>
         </label>
         {openFolders.portfolio && (
@@ -149,8 +167,21 @@ const Explorer = () => {
           </div>
         )}
       </div>
+      <div
+        className="resizer"
+        ref={resizerRef}
+        onMouseDown={handleMouseDown}
+        style={{
+          cursor: 'ew-resize',
+          position: 'absolute',
+          right: 0,
+          top: 0,
+          width: '1px',
+          height: '100%',
+          backgroundColor: '#1E1E1E',
+        }}
+      />
     </div>
   );
 };
-
 export default Explorer;

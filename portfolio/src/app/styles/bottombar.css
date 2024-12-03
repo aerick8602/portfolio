@@ -1,4 +1,4 @@
-.bottombar {
+/* .bottombar {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -7,7 +7,7 @@
     height: 23.5px;
     background-color: #007ACC;
     z-index: 10000;
-  }
+  } */
 
   .remote{
     display: flex;
@@ -35,9 +35,9 @@
   }
   
   .container>p{
-    color: white;
-    font-size: 13px;
-    margin-left: -5px;
+    /* color: white;
+    font-size: 12px; */
+    margin-left: -8px;
 
   }
 
@@ -52,7 +52,7 @@
     transform: scale(0.6);
   }
   .loader {
-    margin-left: -25px;
+    margin-left: -30px;
     height: 100vh;
     display: flex;
     align-items: center;

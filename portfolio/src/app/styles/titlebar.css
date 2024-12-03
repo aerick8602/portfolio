@@ -1,4 +1,4 @@
-.titlebar {
+/* .titlebar {
   height: 35px;
   width: 100vw;
   background-color: #3c3c3c;
@@ -9,7 +9,7 @@
   padding: 0;
   z-index: 10000;
   border-top: 2px solid black;
-}
+} */
 
 .titlebar-left {
   display: flex;
@@ -75,6 +75,14 @@
   height: 100%;
   color: #F5F5F5;
   cursor: pointer;
+}
+.titlebar-right img {
+  filter: brightness(80%); 
+
+}
+
+.titlebar-right img:hover {
+  filter: brightness(100%); 
 }
 
 .mini,.maxi,.close{

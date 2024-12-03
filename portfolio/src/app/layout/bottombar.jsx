@@ -17,26 +17,54 @@ const Bottombar = () => {
 
       <div className='container'>
       <SourceControlIcon/>
-      <p>master</p>
-      <UploadIcon/>
+      <p>master*</p>
+      <p><UploadIcon/></p>
       <a
           href="https://github.com/aerick8602/portfolio"
           className='githubrepo'
         >
-          <RocketIcon/>&nbsp;
-          <p>https://github.com/aerick8602/portfolio</p>
+          <RocketIcon/>
+          &nbsp;
+          <p>github.com/aerick8602/portfolio</p>
       </a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a
+          href="mailto:katiyarayush@gmail.com"
+          className='githubrepo'
+        >
+          <img src='/png/telegram.png' width={14}></img>
+          &nbsp;
+          <p>katiyarayush@gmail.com</p>
+      </a>
       <ErrorIcon/>
-      <p>0</p>
+      <p>6</p>
       <WarningIcon />
-      <p>0</p>&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <img src='svg/copyright-svgrepo-com.svg' width={16}></img>
+      <p>4</p>
+  
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src='svg/copyright-svgrepo-com.svg' width={14}height={20}></img>
       <p> 2024 <b className='god'>AYUSH KATIYAR</b>. All rights reserved... for now 😎</p>
       {/* <img className='herokuapp' 
   src='https://readme-typing-svg.herokuapp.com/?font=Righteous&size=16&color=000000&vCenter=true&width=350&height=70&duration=4000&lines=Hi+There!+%F0%9F%91%8B;+I%27m+Ayush+Katiyar%F0%9F%98%81!;Welcome+to+my+portfolio❤️!!;Prepare+to+be+amazed+............+or+not+%F0%9F%98%82;' 
   alt='Typing SVG'/> */}
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;
+
+  <p>Spaces: 2</p>
+  &nbsp;&nbsp;
+  <p>UTF-8</p>
+  
+    &nbsp;&nbsp;
+
+
+
+  <img src='/next.svg' width={50}></img>
   <div class="loader">
 <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
   <g transform="translate(2 1)" stroke="#002742" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -49,13 +77,12 @@ const Bottombar = () => {
   </g>
 </svg>
 </div>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <p> Powered by</p>
-      <img src='/next.svg' width={50}></img>
-      &nbsp;
+
+      
+
       <img src='/png/internet.png' width={16}></img>
       <p>Webview Panel</p>
-      &nbsp;
+
       <CheckIcon />
       <p>Prettier</p>
       <BellIcon />

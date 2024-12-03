@@ -75,7 +75,7 @@ const Titlebar = () => {
         <img src='/svg/minimize-window-svgrepo-com.svg' width={13}></img>
         </div>
         <div className="maxi" onClick={toggleFullscreen}>
-        <img src='/png/maximize.png' width={16}></img>
+        <img src='/png/maxi.png' width={16}></img>
         </div>
         <div className="close" onClick={closeWindow}>
           <img src='/svg/close-svgrepo-com.svg' width={15}></img>

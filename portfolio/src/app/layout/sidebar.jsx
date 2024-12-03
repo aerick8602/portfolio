@@ -1,4 +1,5 @@
 'use client';
+
 import Link from 'next/link';
 import FilesIcon from '../assets/icons/FilesIcon';
 import GithubIcon from '../assets/icons/GithubIcon';
@@ -9,14 +10,12 @@ import SettingsIcon from '../assets/icons/SettingsIcon';
 import { useRouter } from 'next/navigation';
 import styles from '../styles/sidebar.css';
 import LinkedinIcon from '../assets/icons/LinkedinIcon';
-import { useState } from 'react';
-import Explorer from './explorer';
 
 const sidebarTopItems = [
   { Icon: FilesIcon, path: '#' },
   { Icon: GithubIcon, path: 'https://github.com/aerick8602' },
   { Icon: LeetCodeIcon, path: 'https://leetcode.com/problemset/' },
-  { Icon: LinkedinIcon, path: 'https://www.linkedin.com/in/ayush-katiyar-6a0935238/'},
+  { Icon: LinkedinIcon, path: 'https://www.linkedin.com/in/ayush-katiyar-6a0935238/' },
   { Icon: MailIcon, path: 'mailto:katiyarayush@gmail.com' },
 ];
 
@@ -25,23 +24,17 @@ const sidebarBottomItems = [
   { Icon: SettingsIcon, path: '/settings' },
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ isExplorerVisible, toggleExplorer }) => {
   const router = useRouter();
-  const [isExplorerVisible, setExplorerVisible] = useState(true);
-
-  const handleFilesIconClick = () => {
-    console.log("isExplorerVisible",isExplorerVisible)
-    setExplorerVisible((prev) => !prev);
-  };
 
   return (
-    <div className='sidebar'>
-      <div className='topsidebar'>
+    <div className="sidebar">
+      <div className="topsidebar">
         {sidebarTopItems.map(({ Icon, path }) => (
           <Link href={path} key={path}>
             <div
               className={`${styles.iconContainer} ${router.pathname === path ? styles.active : ''}`}
-              onClick={path === '#' ? handleFilesIconClick : undefined} // Only toggle explorer for FilesIcon
+              onClick={path === '#' ? toggleExplorer : undefined}
             >
               <Icon
                 fill={router.pathname === path ? 'rgb(225, 228, 232)' : 'rgb(106, 115, 125)'}
@@ -51,7 +44,7 @@ const Sidebar = () => {
           </Link>
         ))}
       </div>
-      <div className='bottomsidebar'>
+      <div className="bottomsidebar">
         {sidebarBottomItems.map(({ Icon, path }) => (
           <Link href={path} key={path}>
             <div className={styles.iconContainer}>
@@ -63,8 +56,7 @@ const Sidebar = () => {
           </Link>
         ))}
       </div>
-      
-      {isExplorerVisible && <Explorer/>}
+
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.sidebar {
+/* .sidebar {
     background-color: #333232;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     height: 100vh;
     position:fixed;
     z-index: 1000;
-  }
+  } */
   
   .topsidebar {
     height: 50vh;
@@ -15,7 +15,7 @@
     flex-direction: column;
     gap: 25px;
     align-items: center;
-    padding-top: 55px;
+    padding-top: 15px;
   }
   
   .bottomsidebar {
@@ -24,6 +24,6 @@
     flex-direction: column;
     gap: 25px;
     align-items: center;
-    padding-top: 85px;
+    padding-top: 50px;
   }
   
