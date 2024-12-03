@@ -78,9 +78,10 @@ main {
 }
 
 .main-editor {
-    margin-left: 45px;
+    margin-left: 70px;
+    padding-top: 10px;
     color: whitesmoke;
-    padding: 16px;
+    /* padding: 16px; */
     height: 100%;
     background-color: #1E1E1E; 
 }

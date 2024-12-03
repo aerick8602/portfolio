@@ -1,6 +1,6 @@
-
-export default function Visulax(){
-    return (
-        <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-    );
-}
+const Visulax = () => {
+    return <div>Visulax</div>;
+  };
+  
+  export default Visulax;
+  

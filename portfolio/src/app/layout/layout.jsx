@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import styles from '../styles/layout.css';
 import Visulax from '../pages/projects/visulax';
 import Explorer from './explorer';
+import Welcome from '../pages/welcome';
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -28,10 +29,8 @@ const Layout = ({ children }) => {
 
   return (
     <main>
-      {/* Title bar at the top */}
       <Titlebar className="titlebar" />
       <div className={styles.main}>
-        {/* Sidebar to the left */}
         <Sidebar
           className="sidebar"
           isExplorerVisible={isExplorerVisible}
@@ -41,24 +40,23 @@ const Layout = ({ children }) => {
         <div
           className="main-content"
           style={{
-            width: isExplorerVisible ? `calc(100vw - ${explorerWidth}px+40px)` : '100vw', // Adjust dynamically based on explorer width
-            marginLeft: isExplorerVisible ? `${explorerWidth}px` : '0px', // Adjust margin for explorer visibility
+            width: isExplorerVisible ? `calc(100vw - ${explorerWidth}px+40px)` : '100vw', 
+            marginLeft: isExplorerVisible ? `${explorerWidth}px` : '0px',
           }}
         >
-          {/* Explorer bar, conditionally visible */}
+
           {isExplorerVisible && (
             <Explorer onWidthChange={handleExplorerWidthChange} explorerWidth={explorerWidth} />
           )}
 
-          {/* Main editor content */}
           <div className="main-editor">
-            <Visulax />
-            {/* <main className='editor-content'> {children}</main> */}
+            <Welcome/>
+            
+            {/* <main className='editor-content'> </main> */}
           </div>
         </div>
       </div>
 
-      {/* Bottom bar at the bottom */}
       <Bottombar className="bottombar" />
     </main>
   );
