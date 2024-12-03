@@ -27,3 +27,8 @@
     padding-top: 50px;
   }
   
+  .icon:hover{
+    filter: brightness(12);
+    cursor: pointer;
+  }
+  

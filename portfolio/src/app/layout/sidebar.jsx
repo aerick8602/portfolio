@@ -8,7 +8,7 @@ import MailIcon from '../assets/icons/MailIcon';
 import AccountIcon from '../assets/icons/AccountIcon';
 import SettingsIcon from '../assets/icons/SettingsIcon';
 import { useRouter } from 'next/navigation';
-import styles from '../styles/sidebar.css';
+import '../styles/sidebar.css'; 
 import LinkedinIcon from '../assets/icons/LinkedinIcon';
 
 const sidebarTopItems = [
@@ -33,12 +33,12 @@ const Sidebar = ({ isExplorerVisible, toggleExplorer }) => {
         {sidebarTopItems.map(({ Icon, path }) => (
           <Link href={path} key={path}>
             <div
-              className={`${styles.iconContainer} ${router.pathname === path ? styles.active : ''}`}
+              className={`iconContainer ${router.pathname === path ? 'active' : ''}`}
               onClick={path === '#' ? toggleExplorer : undefined}
             >
               <Icon
                 fill={router.pathname === path ? 'rgb(225, 228, 232)' : 'rgb(106, 115, 125)'}
-                className={styles.icon}
+                className="icon"
               />
             </div>
           </Link>
@@ -47,16 +47,15 @@ const Sidebar = ({ isExplorerVisible, toggleExplorer }) => {
       <div className="bottomsidebar">
         {sidebarBottomItems.map(({ Icon, path }) => (
           <Link href={path} key={path}>
-            <div className={styles.iconContainer}>
+            <div className="iconContainer">
               <Icon
                 fill={router.pathname === path ? 'rgb(225, 228, 232)' : 'rgb(106, 115, 125)'}
-                className={styles.icon}
+                className="icon"
               />
             </div>
           </Link>
         ))}
       </div>
-
     </div>
   );
 };
