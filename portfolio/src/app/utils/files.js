@@ -15,7 +15,7 @@ import Visulax from "../pages/projects/visulax";
 import Resume from "../pages/resume";
 import Skills from "../pages/skills";
 
-const filePages = [
+const files = [
   {
     id: 1,
     name: "about",
@@ -146,4 +146,4 @@ const filePages = [
   },
 ];
 
-export default filePages;
+export default files;

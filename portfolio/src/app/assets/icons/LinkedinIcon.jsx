@@ -8,7 +8,7 @@ const SvgIcon = (props) => (
     viewBox='0 0 24 24'
     fill="none"
     stroke="#858585"
-    strokeWidth={.4}
+    strokeWidth={.3}
     {...props}
   >
     <g id='LinkedIn'>

@@ -5,7 +5,7 @@ import Sidebar from './sidebar';
 import Bottombar from './bottombar';
 import { useRouter } from 'next/navigation';
 import styles from '../styles/layout.css';
-import Visulax from '../pages/projects/visulax';
+
 import Explorer from './explorer';
 import Welcome from '../pages/welcome';
 
@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
   const toggleExplorer = () => setIsExplorerVisible((prev) => !prev);
 
   const handleExplorerWidthChange = (newWidth) => {
+    console.log("isExplorerVisible",isExplorerVisible);
     setExplorerWidth(newWidth); // Update explorer width
   };
 
@@ -33,7 +34,6 @@ const Layout = ({ children }) => {
       <div className={styles.main}>
         <Sidebar
           className="sidebar"
-          isExplorerVisible={isExplorerVisible}
           toggleExplorer={toggleExplorer}
         />
 
@@ -56,7 +56,6 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </div>
-
       <Bottombar className="bottombar" />
     </main>
   );

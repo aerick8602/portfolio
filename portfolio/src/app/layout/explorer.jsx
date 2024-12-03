@@ -1,21 +1,35 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import Link from 'next/link';
 import ChevronRight from '../assets/icons/ChevronRight';
 import '../styles/explorer.css';
-import explorerItems from '../utils/explorerItems';
+import explorerItems from '../utils/fileexplorer';
+import { useDispatch, useSelector } from 'react-redux';
+import { addFile } from '../toolkit/fileslice';
 
 
 const Explorer = ({ onWidthChange, explorerWidth }) => {
+  const resizerRef = useRef(null);
+  const [openfile, setOpenfile] = useState(); // Remove if not needed
   const [openFolders, setOpenFolders] = useState({
     portfolio: true,
     projects: false,
     education: false,
     achievements: false,
+    
   });
+  const dispatch = useDispatch();
+  const fileData = useSelector((state) => state.files.activefiles);
+  console.log(fileData)
 
-  const resizerRef = useRef(null);
+  const handleOpenfile = (item) => {
+    // console.log(`${item.name} clicked`);
+    dispatch(addFile({ name: item.name }));
+    console.log(fileData)
+  };
+  
+
+  
 
   const toggleFolder = (folderName) => {
     setOpenFolders((prevState) => ({
@@ -25,55 +39,65 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
   };
 
   const collapseFolder = () => {
-    setOpenFolders({
-      portfolio: false,
-      projects: false,
-      education: false,
-      achievements: false,
-    });
+    setOpenFolders({});
   };
-
   const refreshExplorer = () => {
-    setOpenFolders({
-      portfolio: true,
-      projects: false,
-      education: false,
-      achievements: false,
-    });
+    setOpenFolders({portfolio: true,});
   };
 
-  const renderItems = (items, folderName) => {
+  const renderItems = (items, folderName,depth=0) => {
     return items.map((item) => {
       if (item.type === 'file') {
         return (
-          <Link href={item.path} key={item.name} className="file-item">
-            {folderName=='folder'?<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>:<p></p>}
-            <img src={item.src} alt={`${item.name} icon`} className="file-icon" />
-            <p className={`file-name ${item.name.length > 20 ? 'short' : ''}`}>
-              {item.name}
-            </p>
-          </Link>
+          <div
+            key={item.name}
+            className="file-item"
+            onClick={() => handleOpenfile(item)}  // Pass the item to the function
+          >
+            <p style={{ marginLeft: `${depth * 28}px` }}></p>
+            {folderName === 'folder' ? <p className='folderbarone'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> : <p></p>}
+            &nbsp;
+            <img src={item.icon} alt={`${item.name} icon`} className="file-icon" />
+            <p className='file-name'>
+              {item.name.length > 16 ? (
+                    <>
+                      {item.name.slice(0, 16)}... 
+                    </>
+                  ) : (
+                    item.name
+              )}
+              </p>
+          </div>
         );
       }
-
+  
       if (item.type === 'folder') {
         return (
-          <div key={item.name} className='folderheading'>
+          <div key={item.name} className="folderheading">
+
             <label
               className="folder-checkbox"
               onClick={() => toggleFolder(item.name)}
-            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            >
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <p style={{ marginLeft: `${depth * 50}px` }}></p>
               <ChevronRight
                 style={openFolders[item.name] ? { transform: 'rotate(90deg)' } : {}}
               />
-              <img src={item.src} alt={`${item.name} icon`} className="folder-icon" />
-              <p className={`folder-name ${item.name.length > 20 ? 'short' : ''}`}>
-                {item.name}
+              <img src={item.icon} alt={`${item.name} icon`} className="folder-icon" />
+              <p className='folder-name'>
+                {item.name.length > 16 ? (
+                  <>
+                    {item.name.slice(0, 16)}... 
+                  </>
+                ) : (
+                  item.name
+                )}
               </p>
             </label>
             {openFolders[item.name] && (
               <div className="file-list">
-                <div>{renderItems(item.items,'folder')}</div>
+                <div>{renderItems(item.items, 'folder',depth+1)}</div>
               </div>
             )}
           </div>
@@ -81,6 +105,8 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
       }
     });
   };
+  
+  
 
   const handleMouseDown = (e) => {
     const startX = e.clientX;
@@ -88,7 +114,7 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
   
     const handleMouseMove = (moveEvent) => {
       let newWidth = startWidth + moveEvent.clientX - startX;
-      newWidth = Math.max(newWidth, 220); 
+      newWidth = Math.max(newWidth, 195); 
       newWidth = Math.min(newWidth, 500); 
       onWidthChange(newWidth); 
     };

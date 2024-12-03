@@ -1,30 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import FilesIcon from '../assets/icons/FilesIcon';
-import GithubIcon from '../assets/icons/GithubIcon';
-import LeetCodeIcon from '../assets/icons/LeetcodeIcon';
-import MailIcon from '../assets/icons/MailIcon';
-import AccountIcon from '../assets/icons/AccountIcon';
-import SettingsIcon from '../assets/icons/SettingsIcon';
+
+
 import { useRouter } from 'next/navigation';
 import '../styles/sidebar.css'; 
-import LinkedinIcon from '../assets/icons/LinkedinIcon';
 
-const sidebarTopItems = [
-  { Icon: FilesIcon, path: '#' },
-  { Icon: GithubIcon, path: 'https://github.com/aerick8602' },
-  { Icon: LeetCodeIcon, path: 'https://leetcode.com/problemset/' },
-  { Icon: LinkedinIcon, path: 'https://www.linkedin.com/in/ayush-katiyar-6a0935238/' },
-  { Icon: MailIcon, path: 'mailto:katiyarayush@gmail.com' },
-];
+import  { sidebarBottomItems, sidebarTopItems } from '../utils/externallinks';
 
-const sidebarBottomItems = [
-  { Icon: AccountIcon, path: '/about' },
-  { Icon: SettingsIcon, path: '/settings' },
-];
 
-const Sidebar = ({ isExplorerVisible, toggleExplorer }) => {
+const Sidebar = ({toggleExplorer }) => {
   const router = useRouter();
 
   return (

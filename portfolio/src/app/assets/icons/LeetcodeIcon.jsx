@@ -6,7 +6,7 @@ const LeetCodeIcon = (props) => (
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       stroke="gray"
-      strokeWidth={.5}
+      strokeWidth={0}
       {...props}
     >
       <defs>
