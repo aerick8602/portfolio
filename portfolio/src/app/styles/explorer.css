@@ -93,24 +93,27 @@
     color: rgb(224, 222, 222);
   }
   
-  .folderheading{
-    padding-left: 40px;
-    /* background-color: black;
-    border: 2px solid wheat; */
-  }
-  .folderheading:hover{
+  /* .folderheading{
+     padding-left: 40px; 
+     background-color: red; 
+     background-color: black;
+    border: 2px solid wheat; 
+  } */
+
+  .folder-checkbox:hover{
     background-color: #333232;
+    
   }
 
   .folder-checkbox:hover {
     color: #ffffff;
 
   }
-  
+/*   
   .folder-checkbox:active {
     color: #ffffff;
   }
-  
+   */
   .portfolio-toggle {
     display: flex;
     justify-content: space-between;
@@ -191,11 +194,12 @@
 .file-name:hover {
   filter: brightness(5);
   color: #ffffff;
-  padding-left: 3px;
+  padding-left: 1px;
 }
-  .file-item:active {
+  /* .file-item:active {
     color: #ffffff;
-  }
+  } */
+  
   
   .file-icon {
     width: 15px;

@@ -8,7 +8,7 @@ import '../styles/explorer.css';
 const explorerItems = [
   { name: 'about.md', path: '/about', type: 'file', src: '/svg/info-svgrepo-com.svg' },
   { name: 'resume.cv', path: '/skills', type: 'file', src: '/png/cv.png' },
-  { name: 'skills', path: '/skills', type: 'file', src: '/png/tie.png' },
+  { name: 'skills.cvs', path: '/skills', type: 'file', src: '/png/tie.png' },
   {
     name: 'projects',
     type: 'folder',
@@ -84,6 +84,7 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
       if (item.type === 'file') {
         return (
           <Link href={item.path} key={item.name} className="file-item">
+            {folderName=='folder'?<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>:<p></p>}
             <img src={item.src} alt={`${item.name} icon`} className="file-icon" />
             <p className={`file-name ${item.name.length > 20 ? 'short' : ''}`}>
               {item.name}
@@ -98,7 +99,7 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
             <label
               className="folder-checkbox"
               onClick={() => toggleFolder(item.name)}
-            >
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <ChevronRight
                 style={openFolders[item.name] ? { transform: 'rotate(90deg)' } : {}}
               />
@@ -109,7 +110,7 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
             </label>
             {openFolders[item.name] && (
               <div className="file-list">
-                {renderItems(item.items, item.name)}
+                <div>{renderItems(item.items,'folder')}</div>
               </div>
             )}
           </div>

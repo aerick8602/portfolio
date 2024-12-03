@@ -43,27 +43,22 @@ const Bottombar = () => {
   
       &nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;
       <img src='svg/copyright-svgrepo-com.svg' width={14}height={20}></img>
       <p> 2024 <b className='god'>AYUSH KATIYAR</b>. All rights reserved... for now 😎</p>
       {/* <img className='herokuapp' 
   src='https://readme-typing-svg.herokuapp.com/?font=Righteous&size=16&color=000000&vCenter=true&width=350&height=70&duration=4000&lines=Hi+There!+%F0%9F%91%8B;+I%27m+Ayush+Katiyar%F0%9F%98%81!;Welcome+to+my+portfolio❤️!!;Prepare+to+be+amazed+............+or+not+%F0%9F%98%82;' 
   alt='Typing SVG'/> */}
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-  <p>Spaces: 2</p>
-  &nbsp;&nbsp;
-  <p>UTF-8</p>
+
+  Spaces: 2
+  &nbsp;
+  UTF-8
   
-    &nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-
+  Powerd by 
+  <img src='/png/chat-gpt.png' width={16}></img>
   <img src='/next.svg' width={50}></img>
   <div class="loader">
 <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +74,6 @@ const Bottombar = () => {
 </div>
 
       
-
       <img src='/png/internet.png' width={16}></img>
       <p>Webview Panel</p>
 
