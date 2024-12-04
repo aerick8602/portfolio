@@ -11,7 +11,7 @@ import files from '../utils/files';
 
 const Explorer = ({ onWidthChange, explorerWidth }) => {
   const resizerRef = useRef(null);
-  const [openfile, setOpenfile] = useState(); // Remove if not needed
+  const [openfile, setOpenfile] = useState();
   const [openFolders, setOpenFolders] = useState({
     portfolio: true,
     projects: false,

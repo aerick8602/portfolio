@@ -21,18 +21,19 @@ const Tab = ({ file, filecount }) => {
         minWidth: `${100/6}%`,
         backgroundColor: file.isactive ? '#1E1E1E' : '#2D2D2D',
       }}
-      onClick={handleSelectedFile} 
+
     >
-      <div className="title">
+      <div className="title" onClick={handleSelectedFile}>
         <div className="fileicon">
           <img src={file.icon} width={15} alt={file.name} />
         </div>
-        <div className="filename">
+        <div className="filename"   >
+          
           <p>{`${file.name}${file.extension}`}</p>
         </div>
       </div>
       <div className="closefile" onClick={handleRemoveFile}>
-        <img src="/svg/close-svgrepo-com.svg" width={14} alt="close" />
+        <img src="/svg/close-svgrepo-com.svg" width={18} alt="close" />
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const files = [
     name: "about",
     icon: "/svg/info-svgrepo-com.svg",
     isactive: false,
-    isOpen: false, // New attribute to track whether the file is open or not
+    isOpen: false,
     component: <About />,
     extension: ".md",
   },
@@ -30,7 +30,7 @@ const files = [
     name: "resume",
     icon: "/png/cv.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <Resume />,
     extension: ".cv",
   },
@@ -39,7 +39,7 @@ const files = [
     name: "skills",
     icon: "/png/tie.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <Skills />,
     extension: ".csv",
   },
@@ -48,7 +48,7 @@ const files = [
     name: "visulax",
     icon: "/png/html.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <Visulax />,
     extension: ".html",
   },
@@ -57,7 +57,7 @@ const files = [
     name: "myportfolio",
     icon: "/png/css.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <MyPortfolio />,
     extension: ".css",
   },
@@ -66,7 +66,7 @@ const files = [
     name: "clerk_template",
     icon: "/png/js.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <ClerkTemplate />,
     extension: ".js",
   },
@@ -75,7 +75,7 @@ const files = [
     name: "inotepad",
     icon: "/svg/react_icon.svg",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <Inotepad />,
     extension: ".jsx",
   },
@@ -84,7 +84,7 @@ const files = [
     name: "eBook_Haven",
     icon: "/svg/react_icon.svg",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <EBookHaven />,
     extension: ".jsx",
   },
@@ -93,7 +93,7 @@ const files = [
     name: "job_scraper",
     icon: "/png/python.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <JobScraper />,
     extension: ".py",
   },
@@ -102,7 +102,7 @@ const files = [
     name: "btech",
     icon: "/png/writing.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <Btech />,
     extension: ".txt",
   },
@@ -111,7 +111,7 @@ const files = [
     name: "sr_secondary",
     icon: "/png/writing.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <SrSecondary />,
     extension: ".txt",
   },
@@ -120,7 +120,7 @@ const files = [
     name: "matriculation",
     icon: "/png/writing.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <Matriculation />,
     extension: ".txt",
   },
@@ -129,7 +129,7 @@ const files = [
     name: "dsa",
     icon: "/png/c-.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <Dsa />,
     extension: ".cpp",
   },
@@ -138,7 +138,7 @@ const files = [
     name: "flipkart_grid",
     icon: "/png/favourites.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false,
     component: <FlipkartGrid />,
     extension: ".grid",
   },
@@ -147,7 +147,7 @@ const files = [
     name: "contact",
     icon: "/png/phone.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <Contact />,
     extension: ".json",
   },
@@ -156,7 +156,7 @@ const files = [
     name: "fullstack",
     icon: "/png/certificate.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false,
     component: <FullStackIntern />,
     extension: ".intern",
   },
@@ -165,7 +165,7 @@ const files = [
     name: "intership",
     icon: "/png/doc.png",
     isactive: false,
-    isOpen: false, // New attribute
+    isOpen: false, 
     component: <FullStackInternship />,
     extension: ".pdf",
   },
