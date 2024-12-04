@@ -4,8 +4,8 @@ const SvgIcon = (props) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     id='Flat'
-    width='17'
-    height='17'
+    width='18'
+    height='18'
     fill="none"
     stroke="white"
     strokeWidth={10}

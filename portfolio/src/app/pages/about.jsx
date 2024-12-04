@@ -19,6 +19,8 @@ const About = () => {
         Hello! I’m **<strong>Ayush Katiyar</strong>**, a passionate and driven student at *<strong>NIT Bhopal</strong>* with a keen interest in technology and software development. Over the years, I have gained hands-on experience in both hardware and software, and I’ve used my background to develop a strong problem-solving mindset.
         <br />
         <br />
+        ### <strong>My Experience</strong>
+        <br />
         I have experience working with various technologies, including *<strong>React</strong>*, *<strong>Next.js</strong>*, *<strong>TypeScript</strong>*, *<strong>C++</strong>*, *<strong>Python</strong>*, *<strong>MySQL</strong>* ,and *<strong>MongoDB</strong>*. I’m particularly drawn to web development, and I’ve worked on multiple projects where I’ve implemented features such as authentication systems, UI components, and dynamic data handling. Some of my favorite projects include Visulax, a web app for visualizing data, and eBook Haven, a platform for managing and reading eBooks.
         <br />
         <br />

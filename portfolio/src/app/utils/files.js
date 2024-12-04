@@ -7,6 +7,7 @@ import Btech from "../pages/education/btech";
 import Matriculation from "../pages/education/matriculation";
 import SrSecondary from "../pages/education/srsecondary";
 import FullStackIntern from "../pages/experience/fullstackintern";
+import Amritam from "../pages/projects/Amritam";
 import ClerkTemplate from "../pages/projects/clerktemplate";
 import EBookHaven from "../pages/projects/ebookhaven";
 import Inotepad from "../pages/projects/inotepad";
@@ -36,12 +37,12 @@ const files = [
   },
   {
     id: 3,
-    name: "skills",
+    name: "skills-lock",
     icon: "/png/tie.png",
     isactive: false,
     isOpen: false, 
     component: <Skills />,
-    extension: ".csv",
+    extension: ".json",
   },
   {
     id: 4,
@@ -168,6 +169,15 @@ const files = [
     isOpen: false, 
     component: <FullStackInternship />,
     extension: ".pdf",
+  },
+  {
+    id: 18,
+    name: "Amritam",
+    icon: "/svg/react_icon.svg",
+    isactive: false,
+    isOpen: false, 
+    component: <Amritam/>,
+    extension: ".jsx",
   },
 ];
 

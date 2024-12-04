@@ -166,7 +166,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 14px;
+    font-size: 16px;
     color: #b5b5b5;
     text-decoration: none;
     cursor: pointer;
@@ -174,7 +174,7 @@
     width: 100%;
     /* padding: 3px 0px 3.5px 40px;  */
     /* padding-left: 5px; */
-    height: 23px;
+    height: 26px;
   }
   
   .file-item:hover{
@@ -183,7 +183,7 @@
   
 
   .file-name {
-    font-size: 14.4px;
+    font-size: 15px;
     white-space: nowrap; 
     overflow: hidden;    
     text-overflow: ellipsis;
@@ -196,7 +196,7 @@
     max-width: 225px;
   } */
   .folder-name {
-    font-size: 14.5px;
+    font-size: 15px;
     white-space: nowrap; 
     overflow: hidden;    
     text-overflow: ellipsis;

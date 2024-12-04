@@ -1,7 +1,7 @@
 const SourceControlIcon = (props) => {
   return (
     <svg
-      width={15}
+      width={16}
       fill="none"
       stroke="white"
       strokeWidth={1.3}

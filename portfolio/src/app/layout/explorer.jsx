@@ -175,7 +175,7 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
           position: 'absolute',
           right: 0,
           top: 0,
-          width: isResizing ? '5px' : '2px',
+          width: isResizing ? '6px' : '5px',
           height: '100%',
           backgroundColor: isResizing ? '#007ACC' : '#1E1E1E',
         }}

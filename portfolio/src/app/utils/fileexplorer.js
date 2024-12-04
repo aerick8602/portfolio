@@ -1,7 +1,7 @@
 const explorerItems = [
   { id: 1, name: 'about', type: 'file', fileType: 'Markdown', fileExtension: '.md', icon: '/svg/info-svgrepo-com.svg' },
   { id: 2, name: 'resume', type: 'file', fileType: 'CV', fileExtension: '.cv', icon: '/png/cv.png' },
-  { id: 3, name: 'skills', type: 'file', fileType: 'CSV', fileExtension: '.csv', icon: '/png/tie.png' },
+  { id: 3, name: 'skills-lock', type: 'file', fileType: 'JSON', fileExtension: '.json', icon: '/png/tie.png' },
   {
     name: 'projects',
     type: 'folder',
@@ -13,6 +13,7 @@ const explorerItems = [
       { id: 7, name: 'inotepad', type: 'file', fileType: 'ReactJS', fileExtension: '.jsx', icon: '/svg/react_icon.svg' },
       { id: 8, name: 'eBook_Haven', type: 'file', fileType: 'ReactJS', fileExtension: '.jsx', icon: '/svg/react_icon.svg' },
       { id: 9, name: 'job_scraper', type: 'file', fileType: 'Python', fileExtension: '.py', icon: '/png/python.png' },
+      { id: 18, name: 'Amritam', type: 'file', fileType: 'ReactJs', fileExtension: '.jsx', icon: '/svg/react_icon.svg' },
     ],
   },
   {
