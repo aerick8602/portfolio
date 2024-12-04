@@ -1,5 +1,7 @@
 const JobScraper = () => {
-    return <div>JobScraper</div>;
+    return <div>
+      <code>Under progress...</code>
+    </div>;
   };
   
   export default JobScraper;

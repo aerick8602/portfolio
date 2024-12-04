@@ -1,0 +1,14 @@
+.contact{
+    padding: 18px 30px 32px 28px;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+   }
+   
+   strong, .row{
+       color: #569CD6;
+   }
+   
+   .data{
+    padding-left: 35px;
+   }

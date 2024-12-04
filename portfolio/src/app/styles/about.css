@@ -1,0 +1,11 @@
+.about{
+ padding: 18px 30px 32px 28px;
+ display: flex;
+ flex-direction: row;
+ gap: 22px;
+ color: whitesmoke;
+}
+
+strong, .row{
+    color: #569CD6;
+}

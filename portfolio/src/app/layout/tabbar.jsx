@@ -1,6 +1,6 @@
 'use client'
 import Tab from '../components/tab';
-import '../styles/tabbar.css';
+
 
 const TabBar = ({ fileData }) => {
 

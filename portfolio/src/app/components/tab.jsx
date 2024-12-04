@@ -25,11 +25,11 @@ const Tab = ({ file, filecount }) => {
     >
       <div className="title" onClick={handleSelectedFile}>
         <div className="fileicon">
-          <img src={file.icon} width={16} alt={file.name} />
+        {file.name==="Welcome"?<img src={file.icon} width={21} alt={file.name} />:<img src={file.icon} width={17} alt={file.name} />}
         </div>
         <div className="filename"   >
-          
-          <p>{`${file.name}${file.extension}`}</p>
+        {file.name==="Welcome"?<p>Welcome</p>:<p>{`${file.name}${file.extension}`}</p>}
+          {/* <p>{`${file.name}${file.extension}`}</p> */}
         </div>
       </div>
       <div className="closefile" onClick={handleRemoveFile}>

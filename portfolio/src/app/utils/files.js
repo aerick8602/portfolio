@@ -135,7 +135,7 @@ const files = [
   },
   {
     id: 14,
-    name: "flipkart_grid",
+    name: "flipkart",
     icon: "/png/favourites.png",
     isactive: false,
     isOpen: false,

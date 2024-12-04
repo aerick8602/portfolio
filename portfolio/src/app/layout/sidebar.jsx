@@ -16,7 +16,7 @@ const Sidebar = ({toggleExplorer }) => {
     <div className="sidebar">
       <div className="topsidebar">
         {sidebarTopItems.map(({ Icon, path }) => (
-          <Link href={path} key={path}>
+          <Link href={path} key={path} target="_blank">
             <div
               className={`iconContainer ${router.pathname === path ? 'active' : ''}`}
               onClick={path === '#' ? toggleExplorer : undefined}

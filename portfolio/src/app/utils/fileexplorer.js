@@ -39,7 +39,7 @@ const explorerItems = [
     icon: '/png/band.png',
     items: [
       { id: 13, name: 'dsa', type: 'file', fileType: 'C++', fileExtension: '.cpp', icon: '/png/c-.png' },
-      { id: 14, name: 'flipkart_grid', type: 'file', fileType: 'Grid File', fileExtension: '.grid', icon: '/png/favourites.png' },
+      { id: 14, name: 'flipkart', type: 'file', fileType: 'Grid File', fileExtension: '.grid', icon: '/png/favourites.png' },
       {
         name: 'certifications',
         type: 'folder',

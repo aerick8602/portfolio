@@ -1,5 +1,9 @@
+import Education from "@/app/components/education";
+import EducationList from "@/app/utils/educationlist";
+
 const Btech = () => {
-    return <div>Btech</div>;
+    const data = EducationList[0];
+    return <Education data={data} />;
   };
   
   export default Btech;

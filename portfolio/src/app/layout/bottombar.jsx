@@ -22,6 +22,7 @@ const Bottombar = () => {
       <a
           href="https://github.com/aerick8602/portfolio"
           className='githubrepo'
+          target="_blank"
         >
           <RocketIcon/>
           &nbsp;
@@ -31,6 +32,7 @@ const Bottombar = () => {
       <a
           href="mailto:katiyarayush@gmail.com"
           className='githubrepo'
+          target="_blank"
         >
           <img src='/png/telegram.png' width={14}></img>
           &nbsp;

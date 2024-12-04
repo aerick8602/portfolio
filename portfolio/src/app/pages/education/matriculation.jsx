@@ -1,6 +1,13 @@
+import Education from "@/app/components/education";
+import EducationList from "@/app/utils/educationlist";
+
 const Matriculation = () => {
-    return <div>Matriculation</div>;
+    const data = EducationList[2];
+    return <Education data={data} />;
   };
   
   export default Matriculation;
+  
+  
+
   

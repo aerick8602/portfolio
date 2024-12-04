@@ -8,7 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addFile, setActiveFile } from '../toolkit/fileslice';
 import files from '../utils/files';
 
-
 const Explorer = ({ onWidthChange, explorerWidth }) => {
   const resizerRef = useRef(null);
   const [openfile, setOpenfile] = useState();
@@ -17,26 +16,22 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
     projects: false,
     education: false,
     achievements: false,
-    
   });
+  const [isResizing, setIsResizing] = useState(false);
   const dispatch = useDispatch();
   const fileData = useSelector((state) => state.files.activefiles);
-  console.log(fileData)
+  console.log(fileData);
 
   const handleOpenfile = (item) => {
-    // console.log(`${item.id} clicked`);
-    // console.log(`${item.name} clicked`);
-    const file=files.find((f)=>f.id===item.id)
-    // console.log("files",file);
+    const file = files.find((f) => f.id === item.id);
     if (file) {
       dispatch(addFile(file));
       dispatch(setActiveFile({ name: file.name }));
-      console.log("Dispatched file data:", file);
+      console.log('Dispatched file data:', file);
     } else {
-      console.log(`File with name "${itemName}" not found.`);
+      console.log(`File with name "${item.name}" not found.`);
+    }
   };
-}
-  
 
   const toggleFolder = (folderName) => {
     setOpenFolders((prevState) => ({
@@ -48,42 +43,46 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
   const collapseFolder = () => {
     setOpenFolders({});
   };
+  
   const refreshExplorer = () => {
-    setOpenFolders({portfolio: true,});
+    setOpenFolders({ portfolio: true });
   };
 
-  const renderItems = (items, folderName,depth=0) => {
+  const renderItems = (items, folderName, depth = 0) => {
     return items.map((item) => {
       if (item.type === 'file') {
         return (
           <div
             key={item.name}
             className="file-item"
-            onClick={() => handleOpenfile(item)}  // Pass the item to the function
+            onClick={() => handleOpenfile(item)}
           >
             <p style={{ marginLeft: `${depth * 28}px` }}></p>
-            {folderName === 'folder' ? <p className='folderbarone'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> : <p></p>}
+            {folderName === 'folder' ? (
+              <p className='folderbarone'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            ) : (
+              <p></p>
+            )}
             &nbsp;
             <img src={item.icon} alt={`${item.name} icon`} className="file-icon" />
             <p className='file-name'>
-              {item.name.length+item.fileExtension.length > 20 ? (
-                    <>
-                      {item.name.slice(0, 20)}... 
-                    </>
-                  ) : (
-                    <>
-                    {`${item.name}`+`${item.fileExtension}`}
-                    </>
+              {item.name.length + item.fileExtension.length > 20 ? (
+                <>
+                  {item.name.slice(0, 20)}... 
+                </>
+              ) : (
+                <>
+                  {`${item.name}` + `${item.fileExtension}`}
+                </>
               )}
-              </p>
+            </p>
           </div>
         );
       }
-  
+
       if (item.type === 'folder') {
         return (
           <div key={item.name} className="folderheading">
-
             <label
               className="folder-checkbox"
               onClick={() => toggleFolder(item.name)}
@@ -106,7 +105,7 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
             </label>
             {openFolders[item.name] && (
               <div className="file-list">
-                <div>{renderItems(item.items, 'folder',depth+1)}</div>
+                <div>{renderItems(item.items, 'folder', depth + 1)}</div>
               </div>
             )}
           </div>
@@ -114,35 +113,34 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
       }
     });
   };
-  
-  
 
   const handleMouseDown = (e) => {
     const startX = e.clientX;
     const startWidth = explorerWidth;
-  
+    setIsResizing(true); // Start resizing
+
     const handleMouseMove = (moveEvent) => {
       let newWidth = startWidth + moveEvent.clientX - startX;
-      newWidth = Math.max(newWidth, 195); 
-      newWidth = Math.min(newWidth, 500); 
-      onWidthChange(newWidth); 
+      newWidth = Math.max(newWidth, 195);
+      newWidth = Math.min(newWidth, 500);
+      onWidthChange(newWidth);
     };
-  
+
     const handleMouseUp = () => {
+      setIsResizing(false); // Stop resizing
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
     };
-  
+
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp);
   };
-  
 
   return (
     <div className="explorerbar" style={{ width: `${explorerWidth}px` }}>
       <div className="explorer">
         <p>EXPLORER</p>
-        <img className='dots' src='/svg/dots-horizontal-svgrepo-com.svg' width={30}></img>
+        <img className='dots' src='/svg/dots-horizontal-svgrepo-com.svg' width={30} />
       </div>
       <div className="folder">
         <label
@@ -154,12 +152,12 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
           />
           <p className="portfolio">PORTFOLIO</p>
           <div className='expolrericons'>
-          <div onClick={refreshExplorer} className="refreshfolder">
-            <img src="/svg/refresh-cw-alt-svgrepo-com.svg" width={14} />
-          </div>
-          <div onClick={collapseFolder} className="collapsefolder">
-            <img src="/svg/folder-remove-1-svgrepo-com.svg" width={14} />
-          </div>
+            <div onClick={refreshExplorer} className="refreshfolder">
+              <img src="/svg/refresh-cw-alt-svgrepo-com.svg" width={14} />
+            </div>
+            <div onClick={collapseFolder} className="collapsefolder">
+              <img src="/svg/folder-remove-1-svgrepo-com.svg" width={14} />
+            </div>
           </div>
         </label>
         {openFolders.portfolio && (
@@ -177,12 +175,13 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
           position: 'absolute',
           right: 0,
           top: 0,
-          width: '1.5px',
+          width: isResizing ? '5px' : '2px',
           height: '100%',
-          backgroundColor: '#1E1E1E',
+          backgroundColor: isResizing ? '#007ACC' : '#1E1E1E',
         }}
       />
     </div>
   );
 };
+
 export default Explorer;
