@@ -25,7 +25,7 @@ const Tab = ({ file, filecount }) => {
     >
       <div className="title" onClick={handleSelectedFile}>
         <div className="fileicon">
-          <img src={file.icon} width={15} alt={file.name} />
+          <img src={file.icon} width={16} alt={file.name} />
         </div>
         <div className="filename"   >
           
@@ -33,7 +33,8 @@ const Tab = ({ file, filecount }) => {
         </div>
       </div>
       <div className="closefile" onClick={handleRemoveFile}>
-        <img src="/svg/close-svgrepo-com.svg" width={18} alt="close" />
+      {/* <img src="/svg/close-svgrepo-com.svg" width={18} alt="close" /> */}
+        {file.name==="Welcome"?<img></img>:<img src="/svg/close-svgrepo-com.svg" width={18} alt="close" />}
       </div>
     </div>
   );

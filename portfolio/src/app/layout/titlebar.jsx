@@ -41,7 +41,7 @@ const Titlebar = () => {
     <div className="titlebar" id="titlebar">
       <div className="titlebar-left">
         <div className="vscode-icon">
-          <img src='/vscode-svgrepo-com.svg' width={20}></img>
+          <img src='/vscode-svgrepo-com.svg' width={22}></img>
         </div>
         <div className="menu-items">
           <p>File</p>

@@ -23,7 +23,7 @@
 }
 
 .filename {
-    font-size: small;
+    font-size: 14px;
     padding-bottom: 2px;
     filter: brightness(0.8); 
     color: white;

@@ -183,7 +183,7 @@
   
 
   .file-name {
-    font-size: 13.4px;
+    font-size: 14.4px;
     white-space: nowrap; 
     overflow: hidden;    
     text-overflow: ellipsis;
@@ -196,7 +196,7 @@
     max-width: 225px;
   } */
   .folder-name {
-    font-size: 13.5px;
+    font-size: 14.5px;
     white-space: nowrap; 
     overflow: hidden;    
     text-overflow: ellipsis;
@@ -219,19 +219,19 @@
   
   
   .file-icon {
-    width: 15px;
-    height: 15px;
+    width: 16.5px;
+    height: 16.5px;
     color: #b5b5b5;
   }
   
   
   .folder-icon {
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
     color: #b5b5b5;
     transition: color 0.2s ease;
   }
-  
+
 
   
   .explorerbar::-webkit-scrollbar {

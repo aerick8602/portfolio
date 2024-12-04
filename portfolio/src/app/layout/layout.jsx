@@ -7,9 +7,9 @@ import { useRouter } from 'next/navigation';
 import styles from '../styles/layout.css';
 
 import Explorer from './explorer';
-import Welcome from '../pages/welcome';
 import TabBar from './tabbar';
 import { useSelector } from 'react-redux';
+import WelcomeScreen from '../pages/welcome';
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -64,7 +64,6 @@ const Layout = ({ children }) => {
           {/* <button onClick={ok}>Show ActiveFiles</button> */}
           <TabBar fileData={fileData} />
           <div className='main-file'>
-            {!fileData.some((file) => file.isactive) && <Welcome />}
             {fileData.map((file) => {
                 if (file.isactive) {
                   return file.component; 

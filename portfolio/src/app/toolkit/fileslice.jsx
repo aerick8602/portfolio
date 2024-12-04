@@ -1,7 +1,18 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
+import WelcomeScreen from '../pages/welcome';
 
 const initialState = {
-  activefiles: [],
+  activefiles: [
+    {
+      id: nanoid(), 
+      name: "Welcome",
+      icon: "/vscode-svgrepo-com.svg",  
+      isactive: true,
+      isOpen: false,  
+      component: <WelcomeScreen />,  
+      extension: "", 
+    },
+  ],
 };
 
 const fileSlice = createSlice({
