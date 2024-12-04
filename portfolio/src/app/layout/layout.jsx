@@ -8,11 +8,15 @@ import styles from '../styles/layout.css';
 
 import Explorer from './explorer';
 import Welcome from '../pages/welcome';
+import TabBar from './tabbar';
+import { useSelector } from 'react-redux';
 
 const Layout = ({ children }) => {
   const router = useRouter();
   const [isExplorerVisible, setIsExplorerVisible] = useState(true);
-  const [explorerWidth, setExplorerWidth] = useState(240); // Track explorer width
+  const [explorerWidth, setExplorerWidth] = useState(240); 
+  const fileData = useSelector((state) => state.files.activefiles);
+
 
   const toggleExplorer = () => setIsExplorerVisible((prev) => !prev);
 
@@ -27,6 +31,14 @@ const Layout = ({ children }) => {
       main.scrollTop = 0;
     }
   }, [router.pathname]);
+
+
+
+// const ok = () => {
+//   fileData.map((file) => {
+//     console.log(file);
+//   });
+// };
 
   return (
     <main>
@@ -44,15 +56,22 @@ const Layout = ({ children }) => {
             marginLeft: isExplorerVisible ? `${explorerWidth}px` : '0px',
           }}
         >
-
           {isExplorerVisible && (
             <Explorer onWidthChange={handleExplorerWidthChange} explorerWidth={explorerWidth} />
           )}
-
+          
           <div className="main-editor">
-            <Welcome/>
-            
-            {/* <main className='editor-content'> </main> */}
+          {/* <button onClick={ok}>Show ActiveFiles</button> */}
+          <TabBar fileData={fileData} />
+          <div className='main-file'>
+            {!fileData.some((file) => file.isactive) && <Welcome />}
+            {fileData.map((file) => {
+                if (file.isactive) {
+                  return file.component; 
+                }
+                return null; 
+              })}
+          </div>
           </div>
         </div>
       </div>

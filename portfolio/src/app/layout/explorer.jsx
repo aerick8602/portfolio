@@ -6,6 +6,7 @@ import '../styles/explorer.css';
 import explorerItems from '../utils/fileexplorer';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFile } from '../toolkit/fileslice';
+import files from '../utils/files';
 
 
 const Explorer = ({ onWidthChange, explorerWidth }) => {
@@ -23,12 +24,17 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
   console.log(fileData)
 
   const handleOpenfile = (item) => {
+    // console.log(`${item.id} clicked`);
     // console.log(`${item.name} clicked`);
-    dispatch(addFile({ name: item.name }));
-    console.log(fileData)
+    const file=files.find((f)=>f.id===item.id)
+    // console.log("files",file);
+    if (file) {
+      dispatch(addFile(file));
+      console.log("Dispatched file data:", file);
+    } else {
+      console.log(`File with name "${itemName}" not found.`);
   };
-  
-
+}
   
 
   const toggleFolder = (folderName) => {
@@ -59,12 +65,14 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
             &nbsp;
             <img src={item.icon} alt={`${item.name} icon`} className="file-icon" />
             <p className='file-name'>
-              {item.name.length > 16 ? (
+              {item.name.length+item.fileExtension.length > 20 ? (
                     <>
-                      {item.name.slice(0, 16)}... 
+                      {item.name.slice(0, 20)}... 
                     </>
                   ) : (
-                    item.name
+                    <>
+                    {`${item.name}`+`${item.fileExtension}`}
+                    </>
               )}
               </p>
           </div>
@@ -86,9 +94,9 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
               />
               <img src={item.icon} alt={`${item.name} icon`} className="folder-icon" />
               <p className='folder-name'>
-                {item.name.length > 16 ? (
+                {item.name.length > 20 ? (
                   <>
-                    {item.name.slice(0, 16)}... 
+                    {item.name.slice(0, 20)}... 
                   </>
                 ) : (
                   item.name
@@ -168,7 +176,7 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
           position: 'absolute',
           right: 0,
           top: 0,
-          width: '1px',
+          width: '1.5px',
           height: '100%',
           backgroundColor: '#1E1E1E',
         }}

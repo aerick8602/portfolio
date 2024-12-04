@@ -12,7 +12,7 @@ main {
     /* background-color: yellow; */
     height: 35px;
     width: 100vw;
-    background-color: #3c3c3c;
+    background-color: #3C3C3C;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -22,9 +22,22 @@ main {
     border-top: 1px solid black;
 }
 
+
+.tabbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 33px; */
+    background-color: #252526;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+
 .sidebar {
     /* background-color: green; */
-    background-color: #333232;
+    background-color: #333333;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,7 +72,7 @@ main {
     top: 35px; 
     left: 55px; 
     /* padding: 16px; */
-    background-color: #282828;
+    background-color: #252526;
     width: 240px;
     height: calc(100vh - 35px - 23.5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -73,15 +86,23 @@ main {
     margin-bottom: 23.5px; 
     height: calc(100vh - 35px - 23.5px);
     background-color: #1E1E1E; 
-    overflow-y: auto;
+    overflow-y: hidden;
     position: relative;
 }
 
 .main-editor {
-    margin-left: 70px;
-    padding-top: 10px;
+    margin-left: 54px;
+    /* padding-top: 10px; */
     color: whitesmoke;
     /* padding: 16px; */
     height: 100%;
     background-color: #1E1E1E; 
+}
+
+
+.main-file{
+    background-color: #1E1E1E;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 100%;
 }

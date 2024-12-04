@@ -1,7 +1,7 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
 
 const initialState = {
-  activefiles: [],  
+  activefiles: [],
 };
 
 const fileSlice = createSlice({
@@ -9,18 +9,30 @@ const fileSlice = createSlice({
   initialState,
   reducers: {
     addFile: (state, action) => {
-      const newFile = {
-        id: nanoid(),
-        name: action.payload.name,
-      };
-      state.activefiles.push(newFile); 
+      const { name, key } = action.payload;
+      const existingFile = state.activefiles.find((file) => file.name === name);
+
+      if (!existingFile) {
+        const newFile = {
+          ...action.payload,
+          id: nanoid(),
+        };
+        state.activefiles.push(newFile);
+      } else {
+        console.log(`File with name "${name}" already exists.`);
+      }
     },
     removeFile: (state, action) => {
-      state.activefiles = state.activefiles.filter((file) => file.id !== action.payload.id);  // Remove file from the activefiles array
+      state.activefiles = state.activefiles.filter((file) => file.id !== action.payload.id);
+    },
+    setActiveFile: (state, action) => {
+      state.activefiles = state.activefiles.map((file) =>
+        file.id === action.payload.id ? { ...file, isactive: true } : { ...file, isactive: false }
+      );
     },
   },
 });
 
-export const { addFile, removeFile } = fileSlice.actions; 
+export const { addFile, removeFile, setActiveFile } = fileSlice.actions;
 
 export default fileSlice.reducer;

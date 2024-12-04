@@ -1,4 +1,5 @@
 import About from "../pages/about";
+import FullStackInternship from "../pages/achievement/certifications/full_stack_internship";
 import Dsa from "../pages/achievement/dsa";
 import FlipkartGrid from "../pages/achievement/flipkartgrid";
 import Contact from "../pages/contact";
@@ -14,136 +15,161 @@ import MyPortfolio from "../pages/projects/myportfolio";
 import Visulax from "../pages/projects/visulax";
 import Resume from "../pages/resume";
 import Skills from "../pages/skills";
-
 const files = [
   {
     id: 1,
     name: "about",
-    key: "about",
     icon: "/svg/info-svgrepo-com.svg",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute to track whether the file is open or not
     component: <About />,
+    extension: ".md",
   },
   {
     id: 2,
     name: "resume",
-    key: "resume",
     icon: "/png/cv.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <Resume />,
+    extension: ".cv",
   },
   {
     id: 3,
     name: "skills",
-    key: "skills",
     icon: "/png/tie.png",
-    isOpen: false,
-    component: <Skills/>,
+    isactive: false,
+    isOpen: false, // New attribute
+    component: <Skills />,
+    extension: ".csv",
   },
   {
     id: 4,
     name: "visulax",
-    key: "visulax",
     icon: "/png/html.png",
-    isOpen: false,
-    component: <Visulax/>,
+    isactive: false,
+    isOpen: false, // New attribute
+    component: <Visulax />,
+    extension: ".html",
   },
   {
     id: 5,
     name: "myportfolio",
-    key: "myportfolio",
     icon: "/png/css.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <MyPortfolio />,
+    extension: ".css",
   },
   {
     id: 6,
     name: "clerk_template",
-    key: "clerk_template",
     icon: "/png/js.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <ClerkTemplate />,
+    extension: ".js",
   },
   {
     id: 7,
     name: "inotepad",
-    key: "inotepad",
     icon: "/svg/react_icon.svg",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <Inotepad />,
+    extension: ".jsx",
   },
   {
     id: 8,
     name: "eBook_Haven",
-    key: "eBook_Haven",
     icon: "/svg/react_icon.svg",
-    isOpen: false,
-    component: <EBookHaven/>,
+    isactive: false,
+    isOpen: false, // New attribute
+    component: <EBookHaven />,
+    extension: ".jsx",
   },
   {
     id: 9,
     name: "job_scraper",
-    key: "job_scraper",
     icon: "/png/python.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <JobScraper />,
+    extension: ".py",
   },
   {
     id: 10,
     name: "btech",
-    key: "btech",
     icon: "/png/writing.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <Btech />,
+    extension: ".txt",
   },
   {
     id: 11,
     name: "sr_secondary",
-    key: "sr_secondary",
     icon: "/png/writing.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <SrSecondary />,
+    extension: ".txt",
   },
   {
     id: 12,
     name: "matriculation",
-    key: "matriculation",
     icon: "/png/writing.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <Matriculation />,
+    extension: ".txt",
   },
   {
     id: 13,
     name: "dsa",
-    key: "dsa",
     icon: "/png/c-.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <Dsa />,
+    extension: ".cpp",
   },
   {
     id: 14,
     name: "flipkart_grid",
-    key: "flipkart_grid",
     icon: "/png/favourites.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <FlipkartGrid />,
+    extension: ".grid",
   },
   {
     id: 15,
     name: "contact",
-    key: "contact",
     icon: "/png/phone.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <Contact />,
+    extension: ".json",
   },
   {
     id: 16,
-    name: "fullstack.intern",
-    key: "fullstack.intern",
+    name: "fullstack",
     icon: "/png/certificate.png",
-    isOpen: false,
+    isactive: false,
+    isOpen: false, // New attribute
     component: <FullStackIntern />,
+    extension: ".intern",
+  },
+  {
+    id: 17,
+    name: "intership",
+    icon: "/png/doc.png",
+    isactive: false,
+    isOpen: false, // New attribute
+    component: <FullStackInternship />,
+    extension: ".pdf",
   },
 ];
 
 export default files;
+

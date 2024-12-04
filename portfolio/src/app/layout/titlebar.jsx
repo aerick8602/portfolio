@@ -65,7 +65,7 @@ const Titlebar = () => {
           &nbsp;&nbsp;
           <img 
               className="herokuapp"
-              src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=16&color=ffffff&vCenter=true&width=290&height=70&duration=4000&lines=%20%20%20%20%20%20Hi+There!+%F0%9F%91%8B+%F0%9F%91%8B;%20%20%20%20%20%20%20I%27m+Ayush+Katiyar%F0%9F%98%81!;Welcome+to+my+portfolio❤️!!;Prepare+to+be+amazed+.........+or+not+%F0%9F%98%82;"
+              src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=16&color=ffffff&vCenter=true&width=290&height=40&duration=4000&lines=%20%20%20%20%20%20Hi+There!+%F0%9F%91%8B+%F0%9F%91%8B;%20%20%20%20%20%20%20I%27m+Ayush+Katiyar%F0%9F%98%81!;Welcome+to+my+portfolio❤️!!;Prepare+to+be+amazed+.........+or+not+%F0%9F%98%82;"
               alt="Typing SVG"
           />
         </div>

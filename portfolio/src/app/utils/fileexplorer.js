@@ -1,18 +1,18 @@
 const explorerItems = [
-  { name: 'about.md', type: 'file', icon: '/svg/info-svgrepo-com.svg' },
-  { name: 'resume.cv', type: 'file', icon: '/png/cv.png' },
-  { name: 'skills.cvs', type: 'file', icon: '/png/tie.png' },
+  { id: 1, name: 'about', type: 'file', fileType: 'Markdown', fileExtension: '.md', icon: '/svg/info-svgrepo-com.svg' },
+  { id: 2, name: 'resume', type: 'file', fileType: 'CV', fileExtension: '.cv', icon: '/png/cv.png' },
+  { id: 3, name: 'skills', type: 'file', fileType: 'CSV', fileExtension: '.csv', icon: '/png/tie.png' },
   {
     name: 'projects',
     type: 'folder',
     icon: '/png/start-up.png',
     items: [
-      { name: 'visulax.html', type: 'file', icon: '/png/html.png' },
-      { name: 'myportfolio.css', type: 'file', icon: '/png/css.png' },
-      { name: 'clerk_template.js', type: 'file', icon: '/png/js.png' },
-      { name: 'inotepad.jsx', type: 'file', icon: '/svg/react_icon.svg' },
-      { name: 'eBook_Haven.jsx', type: 'file', icon: '/svg/react_icon.svg' },
-      { name: 'job_scraper.py', type: 'file', icon: '/png/python.png' },
+      { id: 4, name: 'visulax', type: 'file', fileType: 'HTML', fileExtension: '.html', icon: '/png/html.png' },
+      { id: 5, name: 'myportfolio', type: 'file', fileType: 'CSS', fileExtension: '.css', icon: '/png/css.png' },
+      { id: 6, name: 'clerk_template', type: 'file', fileType: 'JavaScript', fileExtension: '.js', icon: '/png/js.png' },
+      { id: 7, name: 'inotepad', type: 'file', fileType: 'ReactJS', fileExtension: '.jsx', icon: '/svg/react_icon.svg' },
+      { id: 8, name: 'eBook_Haven', type: 'file', fileType: 'ReactJS', fileExtension: '.jsx', icon: '/svg/react_icon.svg' },
+      { id: 9, name: 'job_scraper', type: 'file', fileType: 'Python', fileExtension: '.py', icon: '/png/python.png' },
     ],
   },
   {
@@ -20,7 +20,7 @@ const explorerItems = [
     type: 'folder',
     icon: '/png/user.png',
     items: [
-      { name: 'fullstack.intern', type: 'file', icon: '/png/certificate.png' },
+      { id: 16, name: 'fullstack', type: 'file', fileType: 'Certificate', fileExtension: '.intern', icon: '/png/certificate.png' },
     ],
   },
   {
@@ -28,9 +28,9 @@ const explorerItems = [
     type: 'folder',
     icon: '/png/graduation.png',
     items: [
-      { name: 'btech.txt', type: 'file', icon: '/png/writing.png' },
-      { name: 'sr_secondary.txt', type: 'file', icon: '/png/writing.png' },
-      { name: 'matriculation.txt', type: 'file', icon: '/png/writing.png' },
+      { id: 10, name: 'btech', type: 'file', fileType: 'Text', fileExtension: '.txt', icon: '/png/writing.png' },
+      { id: 11, name: 'sr_secondary', type: 'file', fileType: 'Text', fileExtension: '.txt', icon: '/png/writing.png' },
+      { id: 12, name: 'matriculation', type: 'file', fileType: 'Text', fileExtension: '.txt', icon: '/png/writing.png' },
     ],
   },
   {
@@ -38,22 +38,19 @@ const explorerItems = [
     type: 'folder',
     icon: '/png/band.png',
     items: [
-      { name: 'dsa.cpp', type: 'file', icon: '/png/c-.png' },
-      { name: 'flipkart.grid', type: 'file', icon: '/png/favourites.png' },
+      { id: 13, name: 'dsa', type: 'file', fileType: 'C++', fileExtension: '.cpp', icon: '/png/c-.png' },
+      { id: 14, name: 'flipkart_grid', type: 'file', fileType: 'Grid File', fileExtension: '.grid', icon: '/png/favourites.png' },
       {
         name: 'certifications',
         type: 'folder',
         icon: '/png/certificate.png',
         items: [
-          // { name: 'aws_certification.pdf', type: 'file', icon: '/png/doc.png' },
-          // { name: 'google_analytics_certification.pdf', type: 'file', icon: '/png/doc.png' },
-          { name: 'full_stack_intership.pdf', type: 'file', icon: '/png/doc.png' },
+          { id: 17, name: 'intership', type: 'file', fileType: 'PDF', fileExtension: '.pdf', icon: '/png/doc.png' },
         ],
       },
-
     ],
   },
-  { name: 'contact.json', type: 'file', icon: '/png/phone.png' },
+  { id: 15, name: 'contact', type: 'file', fileType: 'JSON', fileExtension: '.json', icon: '/png/phone.png' },
 ];
 
 export default explorerItems;
