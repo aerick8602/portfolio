@@ -26,8 +26,9 @@ const fileSlice = createSlice({
       state.activefiles = state.activefiles.filter((file) => file.id !== action.payload.id);
     },
     setActiveFile: (state, action) => {
+      const { id,name } = action.payload;
       state.activefiles = state.activefiles.map((file) =>
-        file.id === action.payload.id ? { ...file, isactive: true } : { ...file, isactive: false }
+        (file.id === id || file.name===name) ? { ...file, isactive: true } : { ...file, isactive: false }
       );
     },
   },

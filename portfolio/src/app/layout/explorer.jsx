@@ -5,7 +5,7 @@ import ChevronRight from '../assets/icons/ChevronRight';
 import '../styles/explorer.css';
 import explorerItems from '../utils/fileexplorer';
 import { useDispatch, useSelector } from 'react-redux';
-import { addFile } from '../toolkit/fileslice';
+import { addFile, setActiveFile } from '../toolkit/fileslice';
 import files from '../utils/files';
 
 
@@ -30,6 +30,7 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
     // console.log("files",file);
     if (file) {
       dispatch(addFile(file));
+      dispatch(setActiveFile({ name: file.name }));
       console.log("Dispatched file data:", file);
     } else {
       console.log(`File with name "${itemName}" not found.`);
