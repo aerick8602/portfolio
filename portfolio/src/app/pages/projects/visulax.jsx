@@ -1,4 +1,4 @@
-import '../../styles/project/visulax.css';
+import '../../styles/visulax.css';
 
 const Visulax = () => {
   const rows = Array.from({ length: 50 }, (_, index) => index + 1);

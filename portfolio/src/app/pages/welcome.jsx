@@ -21,6 +21,7 @@ const WelcomeScreen = () => {
           <code className="learn">
             <a href='https://www.linkedin.com/in/ayush-katiyar-6a0935238/' target='_blank'>Let&apos;s connect and learn together! </a>
           </code>
+          
          </div>
       </div>
       <div className='col-2'>
@@ -29,8 +30,11 @@ const WelcomeScreen = () => {
 
           <div className='faq'>
             <div className='content'>
-              <div className='welcomeicon'><img src='/png/skills.png' width={20}></img></div>
-              <div className='welcomedata'>kkkkkkkk</div>
+              <div className='welcomeicon'><img src='/png/information.png' width={22}></img></div>
+              <div className='welcomedata'>
+              <div className='question'>Know About Me</div>
+              <h6 style={{fontSize:'12px'}}>Who am I, and why should you care?</h6>
+              </div>
             </div>
             <div className='radio'>
               <div className='radioval' style={{width:'40%',backgroundColor:'#007ACC', height:'7px', borderRadius:'0px 0px 0px 10px'}}></div>
@@ -39,8 +43,11 @@ const WelcomeScreen = () => {
 
           <div className='faq'>
             <div className='content'>
-              <div className='welcomeicon'><img src='/png/skills.png' width={20}></img></div>
-              <div className='welcomedata'>kkkkkkkk</div>
+              <div className='welcomeicon'><img src='/png/new-hire.png' width={26}></img></div>
+              <div className='welcomedata'>
+              <div className='question' >Why Hire Me</div>
+              <h6 style={{fontSize:'12px'}}>What makes me the right choice for you?</h6>
+              </div>
             </div>
             <div className='radio'>
               <div className='radioval' style={{width:'55%',backgroundColor:'#007ACC', height:'7px', borderRadius:'0px 0px 0px 10px'}}></div>
@@ -50,11 +57,14 @@ const WelcomeScreen = () => {
 
           <div className='faq'>
             <div className='content'>
-              <div className='welcomeicon'><img src='/png/skills.png' width={20}></img></div>
-              <div className='welcomedata'>kkkkkkkk</div>
+              <div className='welcomeicon'><img src='/png/star.png' width={26}></img></div>
+              <div className='welcomedata'>
+              <div className='question'> Project Highlights</div>
+              <h6 style={{fontSize:'12px'}}>What have I worked on that’s worth seeing?</h6>
+              </div>
             </div>
             <div className='radio'>
-              <div className='radioval' style={{width:'80%',backgroundColor:'#007ACC', height:'7px', borderRadius:'0px 0px 0px 10px'}}></div>
+              <div className='radioval' style={{width:'90%',backgroundColor:'#007ACC', height:'7px', borderRadius:'0px 0px 0px 10px'}}></div>
             </div>
           </div>
 
@@ -62,8 +72,11 @@ const WelcomeScreen = () => {
 
           <div className='faq'>
             <div className='content'>
-              <div className='welcomeicon'><img src='/png/skills.png' width={20}></img></div>
-              <div className='welcomedata'>kkkkkkkk</div>
+              <div className='welcomeicon'><img src='/png/chat.png' width={26}></img></div>
+              <div className='welcomedata'>
+              <div className='question' >Get in Touch</div>
+              <h6 style={{fontSize:'12px'}}>How can you reach me?</h6>
+              </div>
             </div>
             <div className='radio'>
               <div className='radioval' style={{width:'30%',backgroundColor:'#007ACC', height:'7px', borderRadius:'0px 0px 0px 10px'}}></div>

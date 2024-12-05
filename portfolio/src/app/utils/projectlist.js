@@ -10,11 +10,11 @@ const ProjectDetails = {
       "       Built with React and Express, it focuses on simplicity, efficiency, and user-friendliness.",
       "       Secure authentication is implemented using JSON Web Tokens (JWT).",
       "     </h1>",
-      "     <a href='https://inotepadv1.netlify.app' target='_blank'>Live Demo</a>", // Inline CSS
+      "     <a href='https://inotepadv1.netlify.app/login' target='_blank'>Live Demo</a>", // Inline CSS
       "     <h4 className='technologies'>",
       "      Technologies Used:",
-      "        • Frontend: React, Axios, Bootstrap.",
-      "        • Backend: Express.js, JSON Web Tokens (JWT).",
+      "        • Frontend: React, Axios, Tailwind, Bootstrap.",
+      "        • Backend: Express.js, MongoDB, JSON Web Tokens (JWT).",
       "      Key Features:",
       "        • Add, edit, and display notes effortlessly.",
       "        • Responsive design with a customized navbar.",
@@ -23,7 +23,7 @@ const ProjectDetails = {
       "    </div>",
       "  );",
       "};",
-      "export default iNotepad 😂😂;"
+      "export default to you 😂😂;"
     ],
     Amritam: [
       "import Amritam from 'me❤️✨';",
@@ -35,21 +35,20 @@ const ProjectDetails = {
       "   technologies: string[];",
       "   features: string[];",
       "}",
-      "const Amritam:React.FC<ProjectDetails> = () => {",
+      "const Amritam: React.FC<ProjectDetails> = () => {",
       "  return (",
       "    <div>",
       "      <h1 className='heading'>",
       "       Amritam is a website focused on reintroducing natural and organic products into kitchens",
-      "       emphasizing health, wellness, and sustainability. The platform provides detailed information",
-      "       about the products, their benefits, and their sources, aiming to promote a healthier lifestyle.",
-      "       The website has a user-friendly design, featuring a prominent logo, concise content,",
-      "       and clear calls to action to encourage user engagement.",
+      "       emphasizing health, wellness, and sustainability. To enhance user experience, I created a ",
+      "       user-friendly UI for the login and sign-up pages of the Amritam website. These pages provide",
+      "       a seamless entry point for users to explore and engage with the brand's offerings.",
       "     </h1>",
-      "     <a href='https://ebookhaven.netlify.app' target='_blank'>Live Demo</a>", // Inline CSS
+      "     <a href='https://amritam.vercel.app/' target='_blank'>Live Demo</a>",
       "     <h4 className='technologies'>",
       "      Technologies Used:",
       "        • Frontend: React, TypeScript, Tailwind CSS.",
-      "        • Backend: Node.js (if applicable, for any backend features).",
+      "        • Backend: Node.js ,MongoDB, JavaScript.",
       "      Key Features:",
       "        • Clean, modern UI with a focus on the brand’s values.",
       "        • Responsive design for seamless experience across devices.",
@@ -57,7 +56,7 @@ const ProjectDetails = {
       "    </div>",
       "  );",
       "};",
-      "export default Amritam 😂😂;"
+      "export default to you 😂😂;"
     ],
     clerktemplate: [
       "import ClerkTemplate from 'me❤️✨';",
@@ -66,15 +65,16 @@ const ProjectDetails = {
       "  return (",
       "    <div>",
       "      <h1 className='heading'>",
-      "       ClerkTemplate is a customizable template for creating modern, responsive, and user-friendly websites.",
-      "       With a focus on simplicity and efficiency, the template enables users to quickly build professional-looking websites.",
-      "       The layout is designed to offer seamless user experiences, with well-organized content sections and a flexible structure.",
+      "      ClerkTemplate is a customizable and modern template designed to integrate user authentication",
+      "      seamlessly into websites. Built with **Clerk**, this template allows developers to quickly add ",
+      "      seamlessly into websites. Built with **Clerk**, this template allows developers to quickly add ",
+      "      Its responsive and clean design provides an excellent user experience across all devices.",
       "     </h1>",
-      "     <a href='https://clerktemplate.netlify.app' target='_blank'>Live Demo</a>", // Inline CSS
+      "     <a href='https://clerk-nextjs-mongodb-zeta.vercel.app/' target='_blank'>Live Demo</a>",
       "     <h4 className='technologies'>",
       "      Technologies Used:",
-      "        • Frontend: React, Tailwind CSS, and Bootstrap.",
-      "        • Backend: None (Static Template).",
+      "        • Frontend: Nextjs, Tailwind CSS, and Bootstrap.",
+      "        • Backend: MongoDB",
       "      Key Features:",
       "        • Fully responsive design for all screen sizes.",
       "        • Clean and modern layout with minimalistic styling.",
@@ -83,7 +83,7 @@ const ProjectDetails = {
       "    </div>",
       "  );",
       "};",
-      "export default ClerkTemplate 😂😂;"
+      "export default to you 😂😂;"
     ],
     eBookHaven: [
       "import eBookHaven from 'me❤️✨';",
@@ -97,11 +97,11 @@ const ProjectDetails = {
       "       browse, search, and download their favorite books seamlessly.",
       "       eBook Haven is built with a focus on simplicity, speed, and a smooth reading experience.",
       "     </h1>",
-      "     <a href='https://bookhaven.netlify.app/' target='_blank'>Live Demo</a>", // Inline CSS
+      "     <a href='https://bookhaven.netlify.app/' target='_blank'>Live Demo</a>", 
       "     <h4 className='technologies'>",
       "      Technologies Used:",
       "        • Frontend: React, Bootstrap, Tailwind CSS.",
-      "        • Backend: Node.js, Express.js (for handling eBook data).",
+      "        • Backend: Node.js, Express.js, MongoDB (for handling eBook data).",
       "      Key Features:",
       "        • Browse and search a wide range of eBooks.",
       "        • Smooth and responsive design for an optimal reading experience.",

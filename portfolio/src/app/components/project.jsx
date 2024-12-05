@@ -7,7 +7,7 @@ const Project = ({data}) => {
     link: { color: "#76d3ff", cursor: "pointer", textDecoration: "underline" },
     comment: { color: "#7d7d7d" },
     tag: { color: "#4eda7f" },
-    default: { color: "#fff" },
+    default: { color: "#d4d2d2" },
   };
   return (
     <div className="about">

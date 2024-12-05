@@ -7,7 +7,7 @@ code{
  display: flex;
  flex-direction: row;
  gap: 22px;
- color: whitesmoke;
+ color: #d4d2d2;
 }
 
 strong, .row{

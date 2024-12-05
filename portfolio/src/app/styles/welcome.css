@@ -1,7 +1,7 @@
 .welcomepage {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 90vh;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
   
   .col-1 {
     width: 50%;
-    height: 100%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -20,21 +20,22 @@
   
   .col-2 {
     width: 50%;
-    height: 100%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* justify-content: center; */
     align-items: center;
-    padding-left:2%;
+    padding-left:5%;
     box-sizing: border-box;
+    margin-top: 10px;
   }
   
   .greet {
-    margin-top: 80px;
     font-size: 4.5rem;
     color: #CCCCCC;
-    margin-bottom: 1rem;
+    margin-top: -5rem;
+    margin-bottom: 2.5rem;
   }
   
   .content h2 {
@@ -42,7 +43,7 @@
     font-size: 4.5rem;
     position: absolute;
     font-weight:400;
-    margin-top:-50px;
+    margin-top:-80px;
     filter: brightness(1.5);
   }
   
@@ -70,7 +71,7 @@
     
 }
 .faq{
-    width: 400px;
+    width: 370px;
     height: 50px;
     /* background-color: blue; */
     margin: 2%;
@@ -106,8 +107,9 @@
 .welcomedata{
     font-size: 0.85rem;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: center; */
     width: 90%;
     background-color: #2C2C2D;
     border-radius:0px 10px  0px 0px ;
@@ -119,6 +121,11 @@
     filter: brightness(2);
 }
 
+.question{
+  font-weight: bold;
+  color: skyblue;
+}
+
 .wping{
     margin: 15px;
 }
@@ -128,7 +135,7 @@
 }
 
 .learn:hover{
-    color:#CCCCCC;
+    color:#007ACC;
 }
 
 
