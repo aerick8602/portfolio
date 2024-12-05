@@ -153,10 +153,10 @@ const Explorer = ({ onWidthChange, explorerWidth }) => {
           <p className="portfolio">PORTFOLIO</p>
           <div className='expolrericons'>
             <div onClick={refreshExplorer} className="refreshfolder">
-              <img src="/svg/refresh-cw-alt-svgrepo-com.svg" width={14} />
+              <img src="/svg/refresh-cw-alt-svgrepo-com.svg" width={16} />
             </div>
             <div onClick={collapseFolder} className="collapsefolder">
-              <img src="/svg/folder-remove-1-svgrepo-com.svg" width={14} />
+              <img src="/svg/folder-remove-1-svgrepo-com.svg" width={16} />
             </div>
           </div>
         </label>

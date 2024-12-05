@@ -14,7 +14,7 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: flex-start;
-    padding-left:4%;
+    padding-left:3%;
     box-sizing: border-box;
   }
   
@@ -32,7 +32,7 @@
   }
   
   .greet {
-    font-size: 4.5rem;
+    font-size: 5rem;
     color: #CCCCCC;
     margin-top: -5rem;
     margin-bottom: 2.5rem;
@@ -40,7 +40,7 @@
   
   .content h2 {
     color: #007ACC;
-    font-size: 4.5rem;
+    font-size: 4.6rem;
     position: absolute;
     font-weight:400;
     margin-top:-80px;

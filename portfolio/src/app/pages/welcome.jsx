@@ -25,8 +25,19 @@ const WelcomeScreen = () => {
          </div>
       </div>
       <div className='col-2'>
-        <h2 style={{color:'CCCCCC', width:'65%',fontSize:'18px'}}><h3>Walkthroughs</h3></h2>
+
         <div className='faqs'>
+        {/* <div style={{width:'100%',paddingLeft:'100px'}}>
+        <h2 style={{color:'CCCCCC',fontSize:'18px'}}><h3></h3></h2>
+        </div> */}
+        <div >
+            <div>
+              <div >
+              <div style={{paddingLeft:'10px',fontSize:'18px'}}>Walkthroughs</div>
+              </div>
+            </div>
+        </div>
+
 
           <div className='faq'>
             <div className='content'>
