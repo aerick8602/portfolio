@@ -1,6 +1,7 @@
 import React from "react";
 
 const Project = ({data,link}) => {
+  data=["gggggggg"]
   const rows = Array.from({ length: 40 }, (_, index) => index + 1);
   const style = {
     keyword: { color: "#ff8976" },
