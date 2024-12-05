@@ -173,11 +173,11 @@ const files = [
   {
     id: 18,
     name: "Amritam",
-    icon: "/svg/react_icon.svg",
+    icon: "/png/typescript.png",
     isactive: false,
     isOpen: false, 
     component: <Amritam/>,
-    extension: ".jsx",
+    extension: ".ts",
   },
 ];
 

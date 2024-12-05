@@ -13,7 +13,7 @@ const explorerItems = [
       { id: 7, name: 'inotepad', type: 'file', fileType: 'ReactJS', fileExtension: '.jsx', icon: '/svg/react_icon.svg' },
       { id: 8, name: 'eBook_Haven', type: 'file', fileType: 'ReactJS', fileExtension: '.jsx', icon: '/svg/react_icon.svg' },
       { id: 9, name: 'job_scraper', type: 'file', fileType: 'Python', fileExtension: '.py', icon: '/png/python.png' },
-      { id: 18, name: 'Amritam', type: 'file', fileType: 'ReactJs', fileExtension: '.jsx', icon: '/svg/react_icon.svg' },
+      { id: 18, name: 'Amritam', type: 'file', fileType: 'NextJs', fileExtension: '.ts', icon: '/png/typescript.png' },
     ],
   },
   {

@@ -1,7 +1,7 @@
 import '../../styles/project/visulax.css';
 
 const Visulax = () => {
-  const rows = Array.from({ length: 43 }, (_, index) => index + 1);
+  const rows = Array.from({ length: 50 }, (_, index) => index + 1);
   return (
     <div className="about">
       <code className="row">

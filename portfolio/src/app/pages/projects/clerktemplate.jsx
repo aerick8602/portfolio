@@ -1,6 +1,9 @@
+import Project from "@/app/components/project";
+import ProjectDetails from "@/app/utils/projectlist";
+
 const ClerkTemplate = () => {
-    return <div>ClerkTemplate</div>;
+    const data=ProjectDetails.clerktemplate;
+    return <Project data={data}></Project>;
   };
-  
   export default ClerkTemplate;
   

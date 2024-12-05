@@ -119,6 +119,10 @@
     
   }
 
+  .folder{
+    padding-bottom: 55px;
+  }
+
   .folder-checkbox:hover {
     color: #ffffff;
 

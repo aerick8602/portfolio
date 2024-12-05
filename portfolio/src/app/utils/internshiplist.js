@@ -10,7 +10,7 @@ const InternshipList = [
         "Automated Processes:  Utilized **node-cron** to automate critical tasks such as transaction processing and review management, improving operational efficiency and reducing manual errors.",
         "Collaborative Integration:  Worked closely with the frontend team to ensure smooth API integration, contributing to the development of a user-friendly and responsive UI/UX design."
       ],
-      TechStack: ["Node.js", "Next.js", "JavaScript", "API design", "MongoDB", "Redux","Cas"],
+      TechStack: ["Node.js", "Next.js", "JavaScript", "API design", "MongoDB", "Redux","scss"],
     },
   ];
   

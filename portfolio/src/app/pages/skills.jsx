@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/contact.css'
 
 const Skills = () => {
-  const rows = Array.from({ length: 67 }, (_, index) => index + 1);
+  const rows = Array.from({ length: 70 }, (_, index) => index + 1);
 
   const skillstech = {
     "&_technicalSkills": {

@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/about.css';
 
 const About = () => {
-  const rows = Array.from({ length: 30 }, (_, index) => index + 1);
+  const rows = Array.from({ length: 40 }, (_, index) => index + 1);
 
   return (
     <div className="about">
@@ -33,7 +33,7 @@ const About = () => {
         When I’m not coding, you’ll find me exploring new tech trends, diving into problem-solving challenges, or working on personal projects. I am excited to apply my skills in new and innovative ways to make a positive impact.
         <br />
         <br />
-        Feel free to explore my portfolio, and don’t hesitate to get in touch for any collaborations or opportunities!
+        Feel free to explore my portfolio, and don’t hesitate to get in touch for any collaborations or opportunities🙌❤️❤️✨!
       </code>
     </div>
   );
