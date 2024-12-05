@@ -36,11 +36,11 @@ const Project = ({data,link}) => {
               const text = textMatch ? textMatch[1] : "Link";
               return (
                 <span key={index} style={style.tag}>
-                  <span>     {'<'}Link href=</span>
+                  <span>     {'<'}Link href=&quote;</span>
                   <a href={url} target="_blank" rel="noopener noreferrer" style={style.link}>
                     {link}
                   </a>
-                  <span> {"target=\"_blank\""}&gt;<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
+                  <span> &quote;{"target=\"_blank\""}&gt;<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
                   <br />
                 </span>
               );
