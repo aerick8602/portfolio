@@ -10,7 +10,7 @@ const JobScraper = () => {
         ))}
       </code>
       <pre>
-        <code><span style={{color:'#ffc427'}}>print(</span>"Under Progress.. Wannaa!! Contrii?"<span style={{color:'#ffc427'}}>)</span></code>
+        <code><span style={{color:'#ffc427'}}>print(</span>{"Under Progress.. Wannaa!! Contrii?"}<span style={{color:'#ffc427'}}>)</span></code>
       </pre>
     </div>
   );

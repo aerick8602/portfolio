@@ -78,7 +78,7 @@ const Skills = () => {
     return Object.keys(data).map((key) => (
       <div key={key} style={{ marginLeft: `${level * 15}px` }}>
         {/* <code style={{ color: '#9CDCFE' }} className="data">"{key}": </code> */}
-        <code style={{ color: '#9CDCFE' }} className="data">{typeof data[key]==='object'?<code style={{color:'#FF5F1F'}}>"{key}":</code>:<code>"{key}"</code>} </code>
+        <code style={{ color: '#9CDCFE' }} className="data">{typeof data[key]==='object'?<code style={{color:'#FF5F1F'}}>&quot;{key}&quot;:</code>:<code>&quot;{key}&quot;"</code>} </code>
 
         {typeof data[key] === 'object' ? (
           <>

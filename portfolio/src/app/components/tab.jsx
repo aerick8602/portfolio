@@ -33,9 +33,10 @@ const Tab = ({ file, filecount }) => {
         </div>
       </div>
       <div className="closefile" onClick={handleRemoveFile}>
-      {/* <img src="/svg/close-svgrepo-com.svg" width={18} alt="close" /> */}
-        {file.name==="Welcome"?<img></img>:<img src="/svg/close-svgrepo-com.svg" width={18} alt="close" />}
-      </div>
+      {file.name === "Welcome" ? null : (
+        <img src="/svg/close-svgrepo-com.svg" width={18} alt="close" />
+      )}
+    </div>
     </div>
   );
 };

@@ -5,13 +5,13 @@ const WelcomeScreen = () => {
   return (
     <div className='welcomepage'>
       <div className='col-1'>
-        <code className='greet'>Hello, I'm</code>  
+        <code className='greet'>{"Hello, I'm"}</code>  
         <code className="content">
           <h2>Ayush Katiyar</h2>
           <h2>Ayush Katiyar</h2>
         </code>
         <code className='welcomedesc'>
-        An experienced full-stack developer with a passion for creating visually stunning, user-friendly websites and crafting seamless digital experiences.
+        {"An experienced full-stack developer with a passion for creating visually stunning, user-friendly websites and crafting seamless digital experiences."}
         </code>
          <div className='connect'>
          <span className="relative flex h-3 w-3 wping">
@@ -19,7 +19,7 @@ const WelcomeScreen = () => {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-[#06c]"></span>
           </span>
           <code className="learn">
-            <a href='https://www.linkedin.com/in/ayush-katiyar-6a0935238/' target='_blank'>Let&apos;s connect and learn together! </a>
+            <a href='https://www.linkedin.com/in/ayush-katiyar-6a0935238/' target='_blank'>{"Let&apos;s connect and learn together! "}</a>
           </code>
           
          </div>

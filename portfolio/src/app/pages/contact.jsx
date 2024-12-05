@@ -16,8 +16,8 @@ const Contact = () => {
   const renderJSON = (data) => {
     return Object.keys(data).map((key) => (
       <div key={key} >
-        <code style={{ color: '#9CDCFE' }} className='data'>"{key}":</code>{''}
-        <code style={{ color: '#CE9178' }}>"{data[key]}"</code>
+        <code style={{ color: '#9CDCFE' }} className='data'>&quot;{key}&quot;:</code>{''}
+        <code style={{ color: '#CE9178' }}>&quot;{data[key]}&quot;</code>
       </div>
     ));
   };
