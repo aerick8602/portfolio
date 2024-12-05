@@ -1,7 +1,6 @@
 import React from "react";
 
 const Project = ({data,link}) => {
-  data=["gggggggg"]
   const rows = Array.from({ length: 40 }, (_, index) => index + 1);
   const style = {
     keyword: { color: "#ff8976" },
@@ -36,14 +35,15 @@ const Project = ({data,link}) => {
               const url = urlMatch ? urlMatch[1] : "#";
               const text = textMatch ? textMatch[1] : "Link";
               return (
-                <span key={index} style={style.tag}>
-                  <span>     {'<'}Link href=</span>
-                  <a href={url} target="_blank" rel="noopener noreferrer" style={style.link}>
-                    {link}
-                  </a>
-                  <span> target=&quot;{"_blank"}&quot;&gt;<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
-                  <br />
-                </span>
+                <span></span>
+                // <span key={index} style={style.tag}>
+                //   <span>     {'<'}Link href=</span>
+                //   <a href={url} target="_blank" rel="noopener noreferrer" style={style.link}>
+                //     {link}
+                //   </a>
+                //   <span> target=&quot;{"_blank"}&quot;&gt;<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
+                //   <br />
+                // </span>
               );
             }
             return (
