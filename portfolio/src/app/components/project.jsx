@@ -40,7 +40,7 @@ const Project = ({data,link}) => {
                   <a href={url} target="_blank" rel="noopener noreferrer" style={style.link}>
                     {link}
                   </a>
-                  <span> {"'target='_blank''>"}<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
+                  <span> {"target=\"_blank\""}&gt;<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
                   <br />
                 </span>
               );
