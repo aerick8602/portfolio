@@ -3,7 +3,8 @@ import ProjectDetails from "@/app/utils/projectlist";
 
 const Amritam = () => {
     const data=ProjectDetails.Amritam;
-    return <Project data={data}></Project>;
+    const link=ProjectDetails.AmritamLink;
+    return <Project data={data} link={link}></Project>;
   };
   export default Amritam;
   

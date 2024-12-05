@@ -10,7 +10,7 @@ const ProjectDetails = {
       "       Built with React and Express, it focuses on simplicity, efficiency, and user-friendliness.",
       "       Secure authentication is implemented using JSON Web Tokens (JWT).",
       "     </h1>",
-      "     <a href='https://inotepadv1.netlify.app/login' target='_blank'>Live Demo</a>", // Inline CSS
+      "     <a href='https://inotepadv1.netlify.app/' target='_blank'>Live Demo</a>", // Inline CSS
       "     <h4 className='technologies'>",
       "      Technologies Used:",
       "        • Frontend: React, Axios, Tailwind, Bootstrap.",
@@ -25,6 +25,7 @@ const ProjectDetails = {
       "};",
       "export default to you 😂😂;"
     ],
+    iNotepadLink:["https://inotepadv1.netlify.app/"],
     Amritam: [
       "import Amritam from 'me❤️✨';",
       "// import './Amritam.css';  // Link to your CSS file",
@@ -58,6 +59,7 @@ const ProjectDetails = {
       "};",
       "export default to you 😂😂;"
     ],
+    AmritamLink:["https://amritam.vercel.app/"],
     clerktemplate: [
       "import ClerkTemplate from 'me❤️✨';",
       "// import './ClerkTemplate.css';  // Link to your CSS file",
@@ -85,6 +87,7 @@ const ProjectDetails = {
       "};",
       "export default to you 😂😂;"
     ],
+    clerktemplateLink:["https://clerk-nextjs-mongodb-zeta.vercel.app/"],
     eBookHaven: [
       "import eBookHaven from 'me❤️✨';",
       "// import './eBookHaven.css';  // Link to your CSS file",
@@ -97,7 +100,7 @@ const ProjectDetails = {
       "       browse, search, and download their favorite books seamlessly.",
       "       eBook Haven is built with a focus on simplicity, speed, and a smooth reading experience.",
       "     </h1>",
-      "     <a href='https://bookhaven.netlify.app/' target='_blank'>Live Demo</a>", 
+      "     <a href='https://ebookhaven.netlify.app/' target='_blank'>Live Demo</a>", 
       "     <h4 className='technologies'>",
       "      Technologies Used:",
       "        • Frontend: React, Bootstrap, Tailwind CSS.",
@@ -112,6 +115,7 @@ const ProjectDetails = {
       "};",
       "export default eBookHaven 😂😂;"
     ],
+    eBookHavenLink:["https://ebookhaven.netlify.app/"],
     myPortfolio:[
       ".about{",
       " The VSCode-Themed Portfolio is a personal portfolio website designed to  ",

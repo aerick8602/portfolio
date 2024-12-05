@@ -1,6 +1,6 @@
 import React from "react";
 
-const Project = ({data}) => {
+const Project = ({data,link}) => {
   const rows = Array.from({ length: 40 }, (_, index) => index + 1);
   const style = {
     keyword: { color: "#ff8976" },
@@ -38,7 +38,7 @@ const Project = ({data}) => {
                 <span key={index} style={style.tag}>
                   <span>     &lt;Link href=</span>
                   <a href={url} target="_blank" rel="noopener noreferrer" style={style.link}>
-                    {'https://ebookhaven.netlify.app'}
+                    {link}
                   </a>
                   <span> target='_blank'&gt;<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
                   <br />

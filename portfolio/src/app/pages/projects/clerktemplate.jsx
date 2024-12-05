@@ -3,7 +3,8 @@ import ProjectDetails from "@/app/utils/projectlist";
 
 const ClerkTemplate = () => {
     const data=ProjectDetails.clerktemplate;
-    return <Project data={data}></Project>;
+    const link=ProjectDetails.clerktemplateLink;
+    return <Project data={data} link={link}></Project>;
   };
   export default ClerkTemplate;
   
