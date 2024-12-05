@@ -11,9 +11,7 @@ const JobScraper = () => {
       </code>
       <pre>
         <code>
-          <span style={{ color: "#ffc427" }}>print(</span>
-          {"Under Progress.. Wanna!! Contrii?"}
-          <span style={{ color: "#ffc427" }}>)</span>
+         hello
         </code>
       </pre>
     </div>
