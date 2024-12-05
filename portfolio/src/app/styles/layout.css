@@ -10,7 +10,7 @@ main {
 
 .titlebar {
     /* background-color: yellow; */
-    height: 37px;
+    height: 39px;
     width: 100vw;
     background-color: #3C3C3C;
     position: fixed;
@@ -56,11 +56,11 @@ main {
     flex-direction: row;
     bottom: 0;
     width: 100vw;
-    height: 26px;
+    height: 30px;
     background-color: #007ACC;
     z-index: 10000;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 
@@ -82,7 +82,7 @@ main {
 
 .main-content {
     margin-left: 345px;
-    margin-top: 35px; 
+    margin-top: 39px; 
     margin-bottom: 24.5px; 
     height: calc(100vh - 35px - 23.5px);
     background-color: #1E1E1E; 
