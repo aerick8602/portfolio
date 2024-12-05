@@ -5,7 +5,7 @@ const WelcomeScreen = () => {
   return (
     <div className='welcomepage'>
       <div className='col-1'>
-        <code className='greet'>{"Hello, I'm"}</code>  
+        <code className='greet'>Hello, I&apos;m</code>  
         <code className="content">
           <h2>Ayush Katiyar</h2>
           <h2>Ayush Katiyar</h2>
