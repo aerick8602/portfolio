@@ -35,15 +35,14 @@ const Project = ({data,link}) => {
               const url = urlMatch ? urlMatch[1] : "#";
               const text = textMatch ? textMatch[1] : "Link";
               return (
-                <span></span>
-                // <span key={index} style={style.tag}>
-                //   <span>     {'<'}Link href=</span>
-                //   <a href={url} target="_blank" rel="noopener noreferrer" style={style.link}>
-                //     {link}
-                //   </a>
-                //   <span> target=&quot;{"_blank"}&quot;&gt;<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
-                //   <br />
-                // </span>
+                <span key={index} style={style.tag}>
+                  <span>     {'<'}Link href=</span>
+                  <a href={url} target="_blank" rel="noopener noreferrer" style={style.link}>
+                    {link}
+                  </a>
+                  <span> {"target=\"_blank\""}&gt;<span style={style.default}>Live Demo</span>&lt;Link&gt;</span>
+                  <br />
+                </span>
               );
             }
             return (
