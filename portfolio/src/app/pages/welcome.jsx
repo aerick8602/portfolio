@@ -19,7 +19,7 @@ const WelcomeScreen = () => {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-[#06c]"></span>
           </span>
           <code className="learn">
-            <a href='https://www.linkedin.com/in/ayush-katiyar-6a0935238/' target='_blank'>{"Let&apos;s connect and learn together! "}</a>
+            <a href='https://www.linkedin.com/in/ayush-katiyar-6a0935238/' target='_blank'>{"Let's connect and learn together! "}</a>
           </code>
           
          </div>
