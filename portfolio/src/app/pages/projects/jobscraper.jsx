@@ -9,13 +9,6 @@ const JobScraper = () => {
           <p key={row}>{row}</p>
         ))}
       </code>
-      <pre>
-        <code>
-          <span style={{ color: "#ffc427" }}>print(</span>
-            &quot;Under Progress.. Wanna!! Contrii?&quot;
-          <span style={{ color: "#ffc427" }}>)</span>
-        </code>
-      </pre>
     </div>
   );
 };
