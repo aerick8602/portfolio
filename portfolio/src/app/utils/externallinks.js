@@ -12,7 +12,7 @@ const sidebarTopItems = [
     { Icon: GithubIcon, path: 'https://github.com/aerick8602' },
     { Icon: LeetCodeIcon, path: 'https://leetcode.com/u/aerick_8602/' },
     { Icon: LinkedinIcon, path: 'https://www.linkedin.com/in/ayush-katiyar-6a0935238/' },
-    { Icon: MailIcon, path: 'mailto:katiyarayush@gmail.com' },
+    { Icon: MailIcon, path: 'mailto:katiyarayush02@gmail.com' },
   ];
 
   const sidebarBottomItems = [

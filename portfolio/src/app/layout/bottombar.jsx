@@ -30,7 +30,7 @@ const Bottombar = () => {
       </a>
 
       <a
-          href="mailto:katiyarayush@gmail.com"
+          href="mailto:katiyarayush02@gmail.com"
           className='githubrepo'
           target="_blank"
         >
