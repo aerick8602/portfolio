@@ -19,6 +19,7 @@ const Bottombar = () => {
       <SourceControlIcon/>
       <p>master*</p>
       <p><UploadIcon/></p>
+      &nbsp;
       <a
           href="https://github.com/aerick8602/portfolio"
           className='githubrepo'
@@ -26,8 +27,9 @@ const Bottombar = () => {
         >
           <RocketIcon/>
           &nbsp;
-          <p>github.com/aerick8602/portfolio</p>
+          <p>aerick8602/portfolio</p>
       </a>
+     
 
       <a
           href="mailto:katiyarayush02@gmail.com"
@@ -37,11 +39,12 @@ const Bottombar = () => {
           <img src='/png/telegram.png' width={16}></img>
           &nbsp;
           <p>katiyarayush02@gmail.com</p>
-      </a>
+      </a> &nbsp;
       <ErrorIcon/>
       <p>6</p>
       <WarningIcon />
       <p>4</p>
+      &nbsp;
   
       
       <img src='svg/copyright-svgrepo-com.svg' width={14}height={20}></img>
