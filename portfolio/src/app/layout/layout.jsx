@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
 
   const handleExplorerWidthChange = (newWidth) => {
     console.log("isExplorerVisible",isExplorerVisible);
+    // console.log(newWidth);
     setExplorerWidth(newWidth); // Update explorer width
   };
 
@@ -52,9 +53,9 @@ const Layout = ({ children }) => {
         <div
           className="main-content"
           style={{
-            width: isExplorerVisible ? `calc(100vw - ${explorerWidth}px+40px)` : '100vw', 
+            width: isExplorerVisible ? `calc(100vw - ${explorerWidth}px )` : '100%',
             marginLeft: isExplorerVisible ? `${explorerWidth}px` : '0px',
-          }}
+          }}          
         >
           {isExplorerVisible && (
             <Explorer onWidthChange={handleExplorerWidthChange} explorerWidth={explorerWidth} />
