@@ -36,7 +36,7 @@ const Bottombar = () => {
         >
           <img src='/png/telegram.png' width={16}></img>
           &nbsp;
-          <p>katiyarayush@gmail.com</p>
+          <p>katiyarayush02@gmail.com</p>
       </a>
       <ErrorIcon/>
       <p>6</p>
