@@ -1,8 +1,7 @@
-- package-lock.json
-- package.json
 - portfolio
   - .eslintrc.json
   - .gitignore
+  - eslint.config.mjs
   - jsconfig.json
   - next.config.mjs
   - package-lock.json
@@ -12,11 +11,18 @@
     - file.svg
     - globe.svg
     - next.svg
+    - pdf
+      - Ayush_Katiyar_Certificate.jpg
+      - Ayush_Katiyar_Resume.pdf
     - png
       - achievement.png
       - band.png
+      - best-customer-experience.png
       - book.png
       - c-.png
+      - certificate.png
+      - chat-gpt.png
+      - chat.png
       - css.png
       - cv.png
       - doc.png
@@ -25,6 +31,7 @@
       - folder.png
       - graduation.png
       - html.png
+      - information.png
       - internet.png
       - js.png
       - json.png
@@ -32,16 +39,21 @@
       - maxi.png
       - maximize.png
       - md.png
+      - new-hire.png
       - open-folder.png
       - phone.png
       - projects.png
       - python.png
       - react.png
+      - search.png
       - skills.png
+      - star.png
       - start-up.png
       - technique.png
       - telegram.png
       - tie.png
+      - typescript.png
+      - user.png
       - writing.png
     - svg
       - arrow-sm-left-svgrepo-com.svg
@@ -60,8 +72,6 @@
     - window.svg
   - README.md
   - src
-    - api
-      - proxy.js
     - app
       - assets
         - icons
@@ -102,6 +112,12 @@
           - WatchIcon.jsx
           - WebviewPanelIcon.jsx
       - components
+        - achievement.jsx
+        - certification.jsx
+        - education.jsx
+        - experience.jsx
+        - project.jsx
+        - tab.jsx
       - favicon.ico
       - fonts
         - GeistMonoVF.woff
@@ -112,19 +128,61 @@
         - explorer.jsx
         - layout.jsx
         - sidebar.jsx
+        - tabbar.jsx
         - titlebar.jsx
       - layout.js
       - page.js
       - pages
+        - about.jsx
+        - achievement
+          - certifications
+            - full_stack_internship.jsx
+          - dsa.jsx
+          - flipkartgrid.jsx
+        - contact.jsx
+        - education
+          - btech.jsx
+          - matriculation.jsx
+          - srsecondary.jsx
+        - experience
+          - fullstackintern.jsx
         - projects
+          - Amritam.jsx
+          - clerktemplate.jsx
+          - ebookhaven.jsx
+          - inotepad.jsx
+          - jobscraper.jsx
+          - myportfolio.jsx
           - visulax.jsx
+        - resume.jsx
+        - skills.jsx
+        - welcome.jsx
       - styles
+        - about.css
+        - achievement.css
         - bottombar.css
+        - contact.css
+        - education.css
+        - experience.css
         - explorer.css
         - layout.css
         - sidebar.css
+        - tab.css
         - titlebar.css
-      - www
-        - proxy.jsx
+        - visulax.css
+        - welcome.css
+      - toolkit
+        - fileprovider.jsx
+        - fileslice.jsx
+        - filestore.jsx
+      - utils
+        - achievement.js
+        - educationlist.js
+        - externallinks.js
+        - fileexplorer.js
+        - files.js
+        - internshiplist.js
+        - projectlist.js
   - tailwind.config.js
+- project_structure.text
 - README.md
