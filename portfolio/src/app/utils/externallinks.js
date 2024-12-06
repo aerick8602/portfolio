@@ -10,7 +10,7 @@ import SettingsIcon from '../assets/icons/SettingsIcon';
 const sidebarTopItems = [
     { Icon: FilesIcon, path: '#' },
     { Icon: GithubIcon, path: 'https://github.com/aerick8602' },
-    { Icon: LeetCodeIcon, path: 'https://leetcode.com/problemset/' },
+    { Icon: LeetCodeIcon, path: 'https://leetcode.com/u/aerick_8602/' },
     { Icon: LinkedinIcon, path: 'https://www.linkedin.com/in/ayush-katiyar-6a0935238/' },
     { Icon: MailIcon, path: 'mailto:katiyarayush@gmail.com' },
   ];
