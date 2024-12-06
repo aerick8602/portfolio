@@ -1,7 +1,7 @@
 .welcomepage {
     display: flex;
     flex-direction: row;
-    height: 90vh;
+    height: 85vh;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;

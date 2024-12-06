@@ -113,7 +113,7 @@ const ProjectDetails = {
       "    </div>",
       "  );",
       "};",
-      "export default eBookHaven 😂😂;"
+      "export default to you 😂😂;"
     ],
     eBookHavenLink:["https://ebookhaven.netlify.app/"],
     myPortfolio:[
