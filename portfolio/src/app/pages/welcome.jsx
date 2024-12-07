@@ -44,7 +44,8 @@ const WelcomeScreen = () => {
               <div className='welcomeicon'><img src='/png/information.png' width={22}></img></div>
               <div className='welcomedata'>
               <div className='question'>Know About Me</div>
-              <h6 style={{fontSize:'12px'}}>Who am I, and why should you care?</h6>
+              {/* <h6 style={{fontSize:'12px'}}>Who am I, and why should you care?</h6> */}
+              <h6 style={{fontSize:'12px'}}>Who I am and what I do?</h6>
               </div>
             </div>
             <div className='radio'>
@@ -57,7 +58,8 @@ const WelcomeScreen = () => {
               <div className='welcomeicon'><img src='/png/new-hire.png' width={26}></img></div>
               <div className='welcomedata'>
               <div className='question' >Why Hire Me</div>
-              <h6 style={{fontSize:'12px'}}>What makes me the right choice for you?</h6>
+              {/* <h6 style={{fontSize:'12px'}}>What makes me the right choice for you?</h6> */}
+              <h6 style={{fontSize:'12px'}}>Reasons why I&apos;m the right fit for you.</h6>
               </div>
             </div>
             <div className='radio'>
@@ -71,7 +73,8 @@ const WelcomeScreen = () => {
               <div className='welcomeicon'><img src='/png/star.png' width={26}></img></div>
               <div className='welcomedata'>
               <div className='question'> Project Highlights</div>
-              <h6 style={{fontSize:'12px'}}>What have I worked on that’s worth seeing?</h6>
+              {/* <h6 style={{fontSize:'12px'}}>What have I worked on that’s worth seeing?</h6> */}
+              <h6 style={{fontSize:'12px'}}>Notable projects worth exploring!!.</h6>
               </div>
             </div>
             <div className='radio'>
@@ -86,7 +89,8 @@ const WelcomeScreen = () => {
               <div className='welcomeicon'><img src='/png/chat.png' width={26}></img></div>
               <div className='welcomedata'>
               <div className='question' >Get in Touch</div>
-              <h6 style={{fontSize:'12px'}}>How can you reach me?</h6>
+              {/* <h6 style={{fontSize:'12px'}}>How can you reach me?</h6> */}
+              <h6 style={{fontSize:'12px'}}>How to reach me?</h6>
               </div>
             </div>
             <div className='radio'>
