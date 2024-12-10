@@ -24,7 +24,7 @@ const Skills = () => {
             "Prisma": "6"
           },
           "&_cloudServices": {
-            "AWS": "2",
+            "AWS": "2.5",
             "Google Cloud": "2.5"
           }
         },
