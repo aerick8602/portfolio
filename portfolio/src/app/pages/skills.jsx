@@ -24,17 +24,17 @@ const Skills = () => {
             "Prisma": "6"
           },
           "&_cloudServices": {
-            "AWS": "4",
-            "Google Cloud": "3.5"
+            "AWS": "2",
+            "Google Cloud": "2.5"
           }
         },
         "@_librariesAndFrameworks": {
           "&_frameworks": {
-            "Express.js": "9.5",
-            "Tailwind CSS": "8.5",
+            "Express.js": "9.6",
+            "Tailwind CSS": "9",
             "Bootstrap": "8",
             "React.js": "8.5",
-            "Next.js": "9"
+            "Next.js": "9.4"
           },
           "&_utilities": {
             "JWT": "7.5",
