@@ -10,7 +10,6 @@ const Education = ({ data }) => {
           <p key={row}>{row}</p>
         ))}
       </code>
-
       <div className="details">
         <code>
           {Object.entries(data).map(([key, value]) => (
