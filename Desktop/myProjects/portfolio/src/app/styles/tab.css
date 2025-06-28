@@ -1,0 +1,45 @@
+.tab {
+    background-color: #2D2D2D;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    min-width: 160px;   
+    max-width: 190px;   
+    overflow: hidden;
+    border-right: 2px solid #1E1E1E;
+    border-bottom: 2px solid #1E1E1E;
+    padding: 0px 7px 0px 15px;
+}
+
+.title {
+    display: flex;
+    width: 180px;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.filename {
+    font-size: 14px;
+    padding-bottom: 2px;
+    filter: brightness(0.8); 
+    color: white;
+}
+
+.closefile {
+    visibility: hidden;         
+    opacity: 0;              
+    transition: visibility 0s, opacity 0.2s ease;  
+    filter: brightness(15);  
+}
+
+.tab:hover .closefile {
+    visibility: visible;        
+    opacity: 1;                
+}
+.tab:hover{
+    cursor: pointer; 
+}

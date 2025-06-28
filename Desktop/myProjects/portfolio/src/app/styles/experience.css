@@ -1,0 +1,18 @@
+.experience{
+    padding: 18px 30px 32px 28px;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+   }
+   
+.row{
+       color: #569CD6;
+   }
+   
+   .title{
+    color: #57A64A;
+   }
+
+   .desc{
+    color: #d4d2d2;
+   }
