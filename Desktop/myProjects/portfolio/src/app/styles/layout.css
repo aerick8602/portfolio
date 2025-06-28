@@ -1,0 +1,126 @@
+main {
+    /* background-color: red;  */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.titlebar {
+    /* background-color: yellow; */
+    height: 39px;
+    width: 100vw;
+    background-color: #3C3C3C;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    z-index: 10000;
+    border-top: 1px solid black;
+}
+
+
+.tabbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 33px; */
+    background-color: #252526;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+
+.sidebar {
+    /* background-color: green; */
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55px;
+    height: 100vh;
+    position: fixed;
+    top: 35px;
+    z-index: 1000;
+}
+
+
+.bottombar {
+    /* background-color: darkblue; */
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    background-color: #007ACC;
+    z-index: 10000;
+    color: white;
+    font-size: 15px;
+}
+
+
+.explorerbar {
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 35px; 
+    left: 55px; 
+    /* padding: 16px; */
+    background-color: #252526;
+    width: 240px;
+    height: calc(100vh - 35px - 23.5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 900;
+}
+
+.main-content {
+    margin-left: 345px;
+    margin-top: 39px; 
+    margin-bottom: 24.5px; 
+    height: calc(100vh - 35px - 23.5px);
+    background-color: #1E1E1E; 
+    overflow-y: hidden;
+    position: relative;
+}
+
+.main-editor {
+    margin-left: 54px;
+    /* padding-top: 10px; */
+    color: whitesmoke;
+    /* padding: 16px; */
+    height: 100%;
+    background-color: #1E1E1E; 
+}
+
+
+.main-file{
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background-color: #1E1E1E;
+    /* padding-left: 10px; */
+    /* padding-top: 5px; */
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+   
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #424242; 
+    
+
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #1E1E1E;
+    border-left: 2px solid #424242;
+  }

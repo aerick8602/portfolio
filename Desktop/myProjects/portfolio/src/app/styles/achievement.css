@@ -1,0 +1,22 @@
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* One column for the title, one for the value */
+    gap: 10px; /* Add space between the columns */
+    align-items: center; /* Center the content vertically */
+  }
+  
+  .detail-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Title and value in two separate columns */
+    gap: 10px;
+  }
+  
+  .detail-title {
+    font-weight: bold;
+    text-align: left; /* Align the title to the left */
+  }
+  
+  .detail-value {
+    text-align: left; /* Align the value to the left */
+  }
+  

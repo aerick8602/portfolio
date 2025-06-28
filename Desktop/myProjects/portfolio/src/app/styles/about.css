@@ -1,0 +1,15 @@
+code{
+    font-size: 20px;
+    font-weight: 100;
+}
+.about{
+ padding: 18px 30px 32px 28px;
+ display: flex;
+ flex-direction: row;
+ gap: 22px;
+ color: #d4d2d2;
+}
+
+strong, .row{
+    color: #569CD6;
+}
